@@ -1,0 +1,25 @@
+{
+  "name": "coello-theme",
+  "version": "1.0.0",
+  "description": "Custom WP template",
+  "main": "index.php",
+  "scripts": {
+    "test": "whois coellotrejo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WAD27/coello-theme.git"
+  },
+  "keywords": [
+    "Law",
+    "Firm",
+    "wordpress",
+    "template"
+  ],
+  "author": "josecaos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WAD27/coello-theme/issues"
+  },
+  "homepage": "https://github.com/WAD27/coello-theme#readme"
+}
