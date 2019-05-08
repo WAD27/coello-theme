@@ -40,7 +40,7 @@ function css() {
   .pipe(rename({ suffix: ".min" }))
   .pipe(postcss([autoprefixer(), cssnano()]))
   .pipe(gulp.dest("./assets/css/"))
-  .pipe(browsersync.stream());
+  .pipe(browsersync.stream())
 
   console.log("Sass Compiled!")
 
@@ -54,6 +54,8 @@ function scriptsLint() {
     .pipe(eslint())
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
+
+    console.log("JavaScript Compiled!")
 }
 
 // Transpile, concatenate and minify scripts
@@ -65,23 +67,32 @@ function scripts() {
       .pipe(webpackstream(webpackconfig, webpack))
       .pipe(gulp.dest("./assets/js/"))
       .pipe(browsersync.stream())
-  );
+  )
+}
+
+function php() {
+  return gulp
+  .src("./**/*.php")
+  .pipe(browsersync.stream())
+  console.log("PHP file Saved!");
 }
 
 // Watch
 function watchFiles() {
   gulp.watch("./scss/**/*", css)
   gulp.watch("./js/**/*", series(scriptsLint, scripts))
+  gulp.watch("./**/*.php", php)
 }
 
 //complex tasks
 const js = series(scriptsLint, scripts)
-const build = series(css, js)
+const build = series(css, js, php)
 const watch = parallel(watchFiles, browserSync)
 
 // export tasks
 exports.css = css
 exports.js = js
+exports.php = php
 exports.build = build
 exports.watch = watch
 exports.default = series(build, watch)
