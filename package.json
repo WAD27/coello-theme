@@ -24,5 +24,10 @@
   "homepage": "https://github.com/WAD27/coello-theme#readme",
   "devDependencies": {
     "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.5",
+    "browsersync": "0.0.1-security",
+    "gulp-sass": "^4.0.2"
   }
 }

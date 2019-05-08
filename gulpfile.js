@@ -1,25 +1,23 @@
-const { series, parallel } = require('gulp');
-
-// The `clean` function is not exported so it can be considered a private task.
-// It can still be used within the `series()` composition.
-function clean(param) {
-  console.log("I'm inside clean Function")
-  param()
+const { series, parallel } = require('gulp')
+const browsersync = require("browser-sync").create()
+const sass = require("gulp-sass")
+//
+function browserSync(done) {
+  browsersync.init({
+    proxy: 'http://localhost/coellotrejo',
+    options: {
+      reloadDelay: 250
+    },
+  });
+  done();
 }
 
-// The `build` function is exported so it is public and can be run with the `gulp` command.
-// It can also be used within the `series()` composition.
-function build(param) {
-  console.log("I'm inside build Function")
+function styles(param) {
+  // console.log("I'm inside sass Function")
   param()
 }
-
-// function defaultTask(cb) {
-//   // place code for your default task here
-//   cb()
-// }
-
-// exports.default = defaultTask
+//
 // exports.build = build
-exports.default = series(clean, build)
+exports.browsersSync = browserSync
+exports.default = series(browserSync)
 // exports.default = parallel(clean, build)
