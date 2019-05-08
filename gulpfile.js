@@ -29,9 +29,10 @@ function browserSync(done) {
 // BrowserSync Reload
 function browserSyncReload(done) {
   browsersync.reload();
-  done();
+  done(console.log("Browser Reload Ready!"));
 }
 function css() {
+  console.log("Sass Compiled!")
   return gulp
   .src("./scss/**/*.scss")
   .pipe(plumber())
@@ -42,7 +43,6 @@ function css() {
   .pipe(gulp.dest("./assets/css/"))
   .pipe(browsersync.stream())
 
-  console.log("Sass Compiled!")
 
 }
 
@@ -71,10 +71,10 @@ function scripts() {
 }
 
 function php() {
+  console.log("PHP file Saved!");
   return gulp
   .src("./**/*.php")
   .pipe(browsersync.stream())
-  console.log("PHP file Saved!");
 }
 
 // Watch

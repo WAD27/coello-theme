@@ -1,10 +1,9 @@
-jQuery(document).ready(($)=>{
+jQuery(document).ready(($) => {
 
   imgLiquid()
 
 })
 //funciones
-(function($) {
   function imgLiquid() {
 
     $('.imgLiquid.imgLiquidFill').imgLiquid()
@@ -12,4 +11,3 @@ jQuery(document).ready(($)=>{
       fill: false
     })
   }
-}(jQuery))

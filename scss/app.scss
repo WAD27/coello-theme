@@ -1,15 +1,33 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:400";
+@import "https://fonts.googleapis.com/css?family=Cardo";
 // colores
 $color-negro: #000;
 $color-blanco: #FFF;
 $color-1: #911f2a;
 $color-gris-1: #f7f7f7;
+$color-texto-contenido: #979797;
 // links, botones
-$boton-active: #911f2a;
+$link: #911f2a;
+$link-active: #911f2a;
+// fonts
+$font-titles: 'Cardo', serif;
+$font-contents: 'Raleway', sans-serif;
 // wireframe
 * {
   outline: 1px solid $color-1;
 }
-
+// settings generales
 body {
-
+  font-family: $font-contents;
+  font-size: 18px;
+  p, div,span, article, section {
+    font-family: $font-contents;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 2.8px;
+    color: $color-texto-contenido
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: $font-titles;
+  }
 }
