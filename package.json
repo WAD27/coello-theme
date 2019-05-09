@@ -24,6 +24,7 @@
   "homepage": "https://github.com/WAD27/coello-theme#readme",
   "devDependencies": {
     "bootstrap": "4.3.1",
+    "fontawesome": "^5.6.3",
     "gulp": "^4.0.2"
   },
   "dependencies": {
