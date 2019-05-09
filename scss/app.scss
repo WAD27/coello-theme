@@ -20,6 +20,9 @@ $font-contents: 'Raleway', sans-serif;
 body {
   font-family: $font-contents;
   font-size: 18px;
+  div {
+    height: 100%;
+  }
   p, div,span, article, section {
     font-family: $font-contents;
     font-size: 18px;
@@ -30,4 +33,76 @@ body {
   h1,h2,h3,h4,h5,h6 {
     font-family: $font-titles;
   }
+  a {//links
+    display: block;
+    height: auto;
+    width: auto;
+    font-family: $font-contents;
+    color: $color-blanco;
+    width: auto;
+  }
+  input, textarea, select {
+    width: 100% !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  #main {
+    padding: 0;
+  }
+  .button {
+    display: inline !important;
+    color: $color-blanco;
+    background-color: $color-1;
+    padding: 8px 32px;
+    text-decoration: none;
+    width: auto;
+    font-size: 12px;
+    letter-spacing: 1px;
+    &:hover{
+      border-color: 1px solid $color-gris-1;
+      color: $color-negro;
+      background-color: $color-blanco;
+    }
+  }
+}// body
+//
+// Home Slider
+#home-form {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  h5 {
+    color: $color-blanco;
+  }
+  textarea {
+    height: 171px;
+  }
+}
+#home-slider {
+  height: 100vh;
+  padding: 0;
+  position: relative;
+  .home-slide {
+    height: 100%;
+    .home-slide-text {
+      // height: auto;
+      h1 {
+        color: $color-blanco;
+        padding: 32px 0px;
+      }
+      h5 {
+        font-family: $font-contents;
+        color: $color-blanco;
+        padding: 32px 0px;
+      }
+    }
+  }
+}//home slider
+//
+// generales
+.ha {
+  height: auto;
+}
+.no-padding {
+  padding: 0;
 }

@@ -9,6 +9,10 @@ body {
   font-size: 18px;
 }
 
+body div {
+  height: 100%;
+}
+
 body p, body div, body span, body article, body section {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -19,4 +23,83 @@ body p, body div, body span, body article, body section {
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Cardo", serif;
+}
+
+body a {
+  display: block;
+  height: auto;
+  width: auto;
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+  width: auto;
+}
+
+body input, body textarea, body select {
+  width: 100% !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+body #main {
+  padding: 0;
+}
+
+body .button {
+  display: inline !important;
+  color: #FFF;
+  background-color: #911f2a;
+  padding: 8px 32px;
+  text-decoration: none;
+  width: auto;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+body .button:hover {
+  border-color: 1px solid #f7f7f7;
+  color: #000;
+  background-color: #FFF;
+}
+
+#home-form {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+}
+
+#home-form h5 {
+  color: #FFF;
+}
+
+#home-form textarea {
+  height: 171px;
+}
+
+#home-slider {
+  height: 100vh;
+  padding: 0;
+  position: relative;
+}
+
+#home-slider .home-slide {
+  height: 100%;
+}
+
+#home-slider .home-slide .home-slide-text h1 {
+  color: #FFF;
+  padding: 32px 0px;
+}
+
+#home-slider .home-slide .home-slide-text h5 {
+  font-family: "Raleway", sans-serif;
+  color: #FFF;
+  padding: 32px 0px;
+}
+
+.ha {
+  height: auto;
+}
+
+.no-padding {
+  padding: 0;
 }

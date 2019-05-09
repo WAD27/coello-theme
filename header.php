@@ -8,3 +8,5 @@
 </head>
 <body>
 <?php get_template_part('template-parts','header-main') ?>
+
+<main id="main" class="container-fluid">

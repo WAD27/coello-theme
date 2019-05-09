@@ -44,6 +44,7 @@
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "postcss": "^7.0.16",
+    "slick-slider": "^1.8.2",
     "webpack": "^4.30.0",
     "webpack-stream": "^5.2.1"
   }
