@@ -11,6 +11,10 @@ function imgLiquid() {
   jQuery('.imgLiquid.imgLiquidNoFill').imgLiquid({
     fill: false
   })
+  jQuery('.imgLiquid.imgLiquidNoFillLeft').imgLiquid({
+    fill: false,
+    horizontalAlign: 'left'
+  })
 }
 
 function home_slider() {

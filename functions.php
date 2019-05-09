@@ -1,6 +1,7 @@
 <?php
 add_filter( 'show_admin_bar', '__return_false' );
 //
+add_theme_support( 'custom-logo', array('header-text' => array('Coello Trejo', 'Abogados')) );
 add_theme_support( 'menus' );
 add_theme_support('post-thumbnails');
 // Dependencias
@@ -21,8 +22,12 @@ function dependencias() {
 // menus
 add_action( 'init', 'menus' );
 function menus() {
-  register_nav_menu('desktop-menu',__( 'Menú Escritorio' ));
-  register_nav_menu('mobile-menu',__( 'Menú Móvil' ));
+  register_nav_menus(
+    array(
+      'desktop-menu' => __( 'Menú Escritorio' ),
+      'mobile-menu' => __( 'Menú Móvil' )
+    )
+  );
 }
 // CPTs
 include_once "cpts/slider-home.php";

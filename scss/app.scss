@@ -1,12 +1,14 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:400";
 @import "https://fonts.googleapis.com/css?family=Cardo";
+@import "fontawesome/font-awesome";
 // colores
 $color-black: #000;
 $color-white: #FFF;
 $color-1: #911f2a;
 $color-gray-1: #f7f7f7;
 $color-gray-2: #979797;
-$color-text-contenido: #979797;
+$color-gray-3: #292828;
+$color-text-content: #979797;
 // links, botones
 $link: #911f2a;
 $link-active: #911f2a;
@@ -29,7 +31,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 2.8px;
-    color: $color-text-contenido
+    color: $color-text-content
   }
   h1,h2,h3,h4,h5,h6 {
     font-family: $font-titles;
@@ -80,7 +82,7 @@ body {
   color: $color-gray-1 !important;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-o-input-placeholder { /* Microsoft Edge */
   color: $color-gray-1 !important;
 }
 //
@@ -88,49 +90,73 @@ body {
 #header {
   height: auto;
   .top-header {
-    height: 42px;
-  }
-  #menu {
-    height:129px;
-  }
-}
-// Home Slider
-#home-form {
-  position: absolute;
-  right: 0;
-  z-index: 1000;
-  h4 {
-    color: $color-white;
-  }
-  textarea {
-    height: 171px;
-  }
-}
-#home-slider {
-  height: 100vh;
-  padding: 0;
-  position: relative;
-  .home-slide {
-    height: 100%;
-    .home-slide-text {
-      // height: auto;
-      h1 {
-        color: $color-white;
-        padding: 16px 0px;
-      }
-      h5 {
-        font-family: $font-contents;
-        color: $color-white;
-        padding: 16px 0px;
+    background-color: $color-gray-1;
+    min-height: 32px;
+    a {
+      text-align: center;
+      display: inline;
+      font-family: $font-contents;
+      font-size: 11px;
+      color: $color-gray-3;
+      text-decoration: none;
+      letter-spacing: 1.5px;
+      &:hover {
+        color: $color-1;
       }
     }
   }
-}//home slider
-//
-// generales
-.ha {
-  height: auto;
+  #menu {
+    height:100px;
+    #header-logo {
+      height: 100%;
+    }
+  }
+  .navbar {
+    padding: 0 1rem;
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
 }
-.no-padding {
-  padding: 0;
-}
+  // Home Slider
+  #home-form {
+    position: absolute;
+    right: 0;
+    z-index: 1000;
+    h4 {
+      color: $color-white;
+    }
+    textarea {
+      height: 171px;
+    }
+  }
+  #home-slider {
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    .home-slide {
+      height: 100%;
+      .home-slide-text {
+        // height: auto;
+        h1 {
+          color: $color-white;
+          padding: 16px 0px;
+        }
+        h5 {
+          font-family: $font-contents;
+          color: $color-white;
+          padding: 16px 0px;
+        }
+      }
+    }
+  }//home slider
+  //
+  // generales
+  .ha {
+    height: auto;
+  }
+  .no-padding {
+    padding: 0;
+  }

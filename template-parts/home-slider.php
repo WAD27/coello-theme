@@ -13,7 +13,7 @@
   $form = get_the_content();
   //
   ?>
-  <div id="home-form" class="col-12 col-md-5">
+  <div id="home-form" class="d-none d-md-block col-12 col-md-5">
 
     <div class="row">
       <div class="ha col-12 col-md-10 col-lg-8 mx-auto my-auto">
