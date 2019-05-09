@@ -1,11 +1,12 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:400";
 @import "https://fonts.googleapis.com/css?family=Cardo";
 // colores
-$color-negro: #000;
-$color-blanco: #FFF;
+$color-black: #000;
+$color-white: #FFF;
 $color-1: #911f2a;
-$color-gris-1: #f7f7f7;
-$color-texto-contenido: #979797;
+$color-gray-1: #f7f7f7;
+$color-gray-2: #979797;
+$color-text-contenido: #979797;
 // links, botones
 $link: #911f2a;
 $link-active: #911f2a;
@@ -28,7 +29,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     letter-spacing: 2.8px;
-    color: $color-texto-contenido
+    color: $color-text-contenido
   }
   h1,h2,h3,h4,h5,h6 {
     font-family: $font-titles;
@@ -38,41 +39,68 @@ body {
     height: auto;
     width: auto;
     font-family: $font-contents;
-    color: $color-blanco;
+    color: $color-white;
     width: auto;
   }
   input, textarea, select {
     width: 100% !important;
     margin-top: 8px;
     margin-bottom: 8px;
+    color: $color-gray-2;
+    background-color: $color-white;
+    font-family: $font-contents;
+    font-size: 14px;
+    border: none;
+    padding: 4px 8px;
   }
   #main {
     padding: 0;
   }
-  .button {
+  .button, .wpcf7-submit{
     display: inline !important;
-    color: $color-blanco;
+    color: $color-white;
     background-color: $color-1;
     padding: 8px 32px;
     text-decoration: none;
     width: auto;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
-    &:hover{
-      border-color: 1px solid $color-gris-1;
-      color: $color-negro;
-      background-color: $color-blanco;
+    &:hover, .wpcf7-submit:hover{
+      border-color: 1px solid $color-gray-1;
+      color: $color-black;
+      background-color: $color-white;
     }
   }
 }// body
+::placeholder {
+  color: $color-gray-1 !important;
+  opacity:1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: $color-gray-1 !important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: $color-gray-1 !important;
+}
 //
+// Menu
+#header {
+  height: auto;
+  .top-header {
+    height: 42px;
+  }
+  #menu {
+    height:129px;
+  }
+}
 // Home Slider
 #home-form {
   position: absolute;
   right: 0;
   z-index: 1000;
-  h5 {
-    color: $color-blanco;
+  h4 {
+    color: $color-white;
   }
   textarea {
     height: 171px;
@@ -87,13 +115,13 @@ body {
     .home-slide-text {
       // height: auto;
       h1 {
-        color: $color-blanco;
-        padding: 32px 0px;
+        color: $color-white;
+        padding: 16px 0px;
       }
       h5 {
         font-family: $font-contents;
-        color: $color-blanco;
-        padding: 32px 0px;
+        color: $color-white;
+        padding: 16px 0px;
       }
     }
   }

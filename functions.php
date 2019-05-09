@@ -18,5 +18,11 @@ function dependencias() {
   // wp_enqueue_script( 'parallax', get_template_directory_uri() . '/bower_components/parallax.js/parallax.js', array('jquery') );
   wp_enqueue_script( 'app-js', get_template_directory_uri() . '/assets/js/app.prod.js', array('jquery'));
 }
+// menus
+add_action( 'init', 'menus' );
+function menus() {
+  register_nav_menu('desktop-menu',__( 'Menú Escritorio' ));
+  register_nav_menu('mobile-menu',__( 'Menú Móvil' ));
+}
 // CPTs
 include_once "cpts/slider-home.php";

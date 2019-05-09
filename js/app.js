@@ -17,7 +17,7 @@ function home_slider() {
   jQuery('#home-slider').slick({
     autoPlay: true,
     arrows: false,
-    fade: false,
+    fade: true,
     mobileFirst: false,
     pauseOnFocus: false,
     pauseOnHover: false,

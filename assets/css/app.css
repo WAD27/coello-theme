@@ -38,27 +38,60 @@ body input, body textarea, body select {
   width: 100% !important;
   margin-top: 8px;
   margin-bottom: 8px;
+  color: #979797;
+  background-color: #FFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  border: none;
+  padding: 4px 8px;
 }
 
 body #main {
   padding: 0;
 }
 
-body .button {
+body .button, body .wpcf7-submit {
   display: inline !important;
   color: #FFF;
   background-color: #911f2a;
   padding: 8px 32px;
   text-decoration: none;
   width: auto;
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
-body .button:hover {
+body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, body .wpcf7-submit .wpcf7-submit:hover {
   border-color: 1px solid #f7f7f7;
   color: #000;
   background-color: #FFF;
+}
+
+::placeholder {
+  color: #f7f7f7 !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f7f7f7 !important;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f7f7f7 !important;
+}
+
+#header {
+  height: auto;
+}
+
+#header .top-header {
+  height: 42px;
+}
+
+#header #menu {
+  height: 129px;
 }
 
 #home-form {
@@ -67,7 +100,7 @@ body .button:hover {
   z-index: 1000;
 }
 
-#home-form h5 {
+#home-form h4 {
   color: #FFF;
 }
 
@@ -87,13 +120,13 @@ body .button:hover {
 
 #home-slider .home-slide .home-slide-text h1 {
   color: #FFF;
-  padding: 32px 0px;
+  padding: 16px 0px;
 }
 
 #home-slider .home-slide .home-slide-text h5 {
   font-family: "Raleway", sans-serif;
   color: #FFF;
-  padding: 32px 0px;
+  padding: 16px 0px;
 }
 
 .ha {
