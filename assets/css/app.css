@@ -3162,6 +3162,19 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
   height: 100%;
 }
 
+#header #menu button.navbar-toggler {
+  color: #911f2a !important;
+}
+
+#header #menu button.navbar-toggler:hover {
+  color: #292828 !important;
+}
+
+#header #menu #navbarSupportedContent {
+  background-color: #FFF;
+  z-index: 10000;
+}
+
 #header .navbar {
   padding: 0 1rem;
 }

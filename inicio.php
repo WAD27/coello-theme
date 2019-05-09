@@ -4,13 +4,13 @@ get_template_part('template-parts/home-slider');
 
 ?>
 
-<section>
+<section class="container">
 
-  <h1>
+  <h1 class="text-center">
     <?php echo "Coello Trejo Abogados localhost"; ?>
   </h1>
 
-  <p>
+  <div class="row">
     <?php
     if (have_posts()):
       while (have_posts()):
@@ -26,7 +26,7 @@ get_template_part('template-parts/home-slider');
 
     endif;
     ?>
-  </p>
+  </div>
 </section>
 
 

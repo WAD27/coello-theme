@@ -110,6 +110,17 @@ body {
     #header-logo {
       height: 100%;
     }
+
+    button.navbar-toggler {
+      color: $color-1 !important;
+      &:hover {
+        color: $color-gray-3 !important;
+      }
+    }
+    #navbarSupportedContent {
+      background-color: $color-white;
+      z-index: 10000;
+    }
   }
   .navbar {
     padding: 0 1rem;
@@ -120,43 +131,43 @@ body {
     }
   }
 }
-  // Home Slider
-  #home-form {
-    position: absolute;
-    right: 0;
-    z-index: 1000;
-    h4 {
-      color: $color-white;
-    }
-    textarea {
-      height: 171px;
-    }
+// Home Slider
+#home-form {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+  h4 {
+    color: $color-white;
   }
-  #home-slider {
-    height: 100vh;
-    padding: 0;
-    position: relative;
-    .home-slide {
-      height: 100%;
-      .home-slide-text {
-        // height: auto;
-        h1 {
-          color: $color-white;
-          padding: 16px 0px;
-        }
-        h5 {
-          font-family: $font-contents;
-          color: $color-white;
-          padding: 16px 0px;
-        }
+  textarea {
+    height: 171px;
+  }
+}
+#home-slider {
+  height: 100vh;
+  padding: 0;
+  position: relative;
+  .home-slide {
+    height: 100%;
+    .home-slide-text {
+      // height: auto;
+      h1 {
+        color: $color-white;
+        padding: 16px 0px;
+      }
+      h5 {
+        font-family: $font-contents;
+        color: $color-white;
+        padding: 16px 0px;
       }
     }
-  }//home slider
-  //
-  // generales
-  .ha {
-    height: auto;
   }
-  .no-padding {
-    padding: 0;
-  }
+}//home slider
+//
+// generales
+.ha {
+  height: auto;
+}
+.no-padding {
+  padding: 0;
+}
