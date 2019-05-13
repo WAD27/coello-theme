@@ -30,7 +30,7 @@ function menus() {
   );
 }
 //
-function remove_menus() {
+function remove_backend_menus() {
   remove_menu_page('upload.php');                 //Media
   remove_menu_page('edit-comments.php');          //Comments
   remove_menu_page('edit.php');                   //Posts
@@ -43,7 +43,8 @@ function remove_menus() {
 	// remove_menu_page( 'tools.php' );                  //Tools
 	// remove_menu_page( 'options-general.php' );     //Settings
 }
-add_action('admin_menu','remove_menus');
+add_action('admin_menu','remove_backend_menus');
 // CPTs
 include_once "cpts/slider-home.php";
 include_once "cpts/asesoria-juridica.php";
+include_once "cpts/abogados.php";

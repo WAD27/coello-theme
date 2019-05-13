@@ -25,7 +25,7 @@ function home_slider() {
     mobileFirst: false,
     pauseOnFocus: false,
     pauseOnHover: false,
-    speed: 100,
+    speed: 750,
     autoPlaySpeed: 1000
 
   });
