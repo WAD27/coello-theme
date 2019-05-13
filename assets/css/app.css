@@ -3158,6 +3158,12 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 }
 
 #header #menu {
+  transition: 1s;
+  top: 0;
+  z-index: 100000;
+  width: 100%;
+  background-color: white;
+  left: 0;
   height: 100px;
   padding: 0;
 }
