@@ -146,10 +146,11 @@ body {
     #navbarSupportedContent {
       background-color: $color-white;
       z-index: 10000;
-      padding: 0 16px;
+      padding: 0;
       height: auto;
       // box-shadow: 2px 2px 4px $color-gray-3;
       width: 100%;
+      // display: none;
       .menu-mobile-container {
         padding: 16px;
         width: 100%;
@@ -160,7 +161,7 @@ body {
           padding-left: 0;
           padding-right: 0;
           margin: 0 auto;
-          // display: flex;
+          display: inline;
           .current_page_item {
             font-weight: bolder;
             a {
@@ -196,7 +197,11 @@ body {
               }
             }
             .sub-menu {
-              display: block;
+              // distintos estilos de menu mobil
+              display: inline;
+              // display: flex;
+              // display: block;
+              //
               opacity: 1;
               position: relative;
               min-width: 200px;
@@ -416,6 +421,7 @@ body {
     .page-header-img {
     }
     .page-header-title {
+      height:100%;
       display: absolute;
     }
   }

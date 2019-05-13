@@ -59,7 +59,7 @@
     <!--  -->
     <div class="container col-10 d-none d-lg-block" id="navbarDesktop">
 
-      <?php wp_nav_menu( array( 'theme_location' => 'desktop-menu')); ?>
+      <?php wp_nav_menu( array('theme_location' => 'desktop-menu')); ?>
 
     </div>
     <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
