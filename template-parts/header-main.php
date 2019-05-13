@@ -1,4 +1,4 @@
-<header id="header" class="container-fluid">
+<header id="header" class="container-fluid no-padding">
 
   <div id="top-header" class="row top-header">
 
@@ -29,9 +29,18 @@
 
   <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-ligh">
 
-    <div class="col-8 col-sm-4 col-md-3 col-lg-2 navbar-brand">
+    <div class="col-7 col-sm-4 col-md-3 col-lg-2 navbar-brand">
       <a href="<?php echo home_url(); ?>" alt="Link a Inicio Coello Trejo">
-        <div id="header-logo" class="imgLiquid imgLiquidNoFill">
+        <div id="header-logo" class="d-none d-lg-block imgLiquid imgLiquidNoFill">
+
+          <?php
+          $custom_logo_id = get_theme_mod('custom_logo');
+          $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id ,'full');
+          ?>
+          <img src="<?php echo $custom_logo_url;?>" alt="Coello Trejo Abogados Logo">
+
+        </div>
+        <div id="header-logo-mobile" class="d-block d-lg-none imgLiquid imgLiquidNoFillLeft">
 
           <?php
           $custom_logo_id = get_theme_mod('custom_logo');
@@ -44,13 +53,18 @@
 
     </div>
     <!--  -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     <!--  -->
-    <div class="container-fluid collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="container col-10 d-none d-lg-block" id="navbarDesktop">
 
       <?php wp_nav_menu( array( 'theme_location' => 'desktop-menu')); ?>
+
+    </div>
+    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+
+      <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu')); ?>
 
     </div>
 
