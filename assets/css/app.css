@@ -3049,10 +3049,6 @@
   clip: auto;
 }
 
-* {
-  outline: 1px solid #911f2a;
-}
-
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -3072,6 +3068,11 @@ body p, body div, body span, body article, body section {
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Cardo", serif;
+}
+
+body section {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 body a {
@@ -3133,6 +3134,7 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 
 #header {
   height: auto;
+  box-shadow: 1px 1px 2px #979797;
 }
 
 #header .top-header {
@@ -3156,23 +3158,84 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 
 #header #menu {
   height: 100px;
+  padding: 0;
 }
 
 #header #menu #header-logo {
   height: 100%;
 }
 
-#header #menu button.navbar-toggler {
-  color: #911f2a !important;
-}
-
-#header #menu button.navbar-toggler:hover {
-  color: #292828 !important;
-}
-
 #header #menu #navbarSupportedContent {
   background-color: #FFF;
   z-index: 10000;
+  padding: 0;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .current_page_item,
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .current-menu-ancestor {
+  background-color: #911f2a;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .current_page_item a,
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .current-menu-ancestor a {
+  color: #FFF !important;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item {
+  display: flex;
+  width: auto;
+  position: relative;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item a {
+  color: #292828;
+  font-family: "Cardo", serif;
+  font-size: 14px;
+  padding: 8px 32px;
+  text-decoration: none;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item a:hover {
+  background-color: #911f2a;
+  color: #FFF;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item .sub-menu {
+  display: none;
+  position: absolute;
+  min-width: 255px;
+  background-color: #FFF !important;
+  padding-top: 24px;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item .sub-menu .current_page_item,
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item .sub-menu .current-menu-ancestor {
+  background-color: #911f2a;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item .sub-menu .current_page_item a,
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop .menu-item .sub-menu .current-menu-ancestor a {
+  color: #FFF !important;
+}
+
+#header #menu #navbarSupportedContent .menu-desktop-container #menu-desktop #menu-item-55:hover .sub-menu {
+  display: block;
+  top: 47px;
+  padding: 0;
 }
 
 #header .navbar {
@@ -3181,6 +3244,7 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 
 #header .navbar .navbar-brand {
   display: inline-block;
+  display: grid;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
@@ -3218,6 +3282,44 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
   font-family: "Raleway", sans-serif;
   color: #FFF;
   padding: 16px 0px;
+}
+
+#inicio-quien h1, #inicio-quien h2, #inicio-quien h3, #inicio-quien h4, #inicio-quien h5, #inicio-quien h6 {
+  color: #911f2a;
+}
+
+#inicio-quien .inicio-quien-boton-wrap {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+#inicio-areas {
+  background-color: #f7f7f7;
+}
+
+#inicio-areas h1, #inicio-areas h2, #inicio-areas h3, #inicio-areas h4, #inicio-areas h5, #inicio-areas h6 {
+  color: #000;
+}
+
+#inicio-areas .areas-item {
+  padding: 16px;
+}
+
+#inicio-areas .areas-item .areas-image {
+  min-height: 120px;
+}
+
+#inicio-areas .areas-item .areas-title {
+  color: #000;
+}
+
+#inicio-areas .areas-item .areas-title a {
+  color: #911f2a;
+}
+
+#inicio-areas .areas-item .areas-title a:hover {
+  text-decoration: none;
+  color: #979797;
 }
 
 .ha {

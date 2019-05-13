@@ -17,7 +17,7 @@ $font-titles: 'Cardo', serif;
 $font-contents: 'Raleway', sans-serif;
 // wireframe
 * {
-  outline: 1px solid $color-1;
+  // outline: 1px solid $color-1;
 }
 // settings generales
 body {
@@ -35,6 +35,10 @@ body {
   }
   h1,h2,h3,h4,h5,h6 {
     font-family: $font-titles;
+  }
+  section {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   a {//links
     display: block;
@@ -89,6 +93,7 @@ body {
 // Menu
 #header {
   height: auto;
+  box-shadow: 1px 1px 2px $color-gray-2;
   .top-header {
     background-color: $color-gray-1;
     min-height: 32px;
@@ -107,25 +112,77 @@ body {
   }
   #menu {
     height:100px;
+    padding: 0;
     #header-logo {
       height: 100%;
-    }
-
-    button.navbar-toggler {
-      color: $color-1 !important;
-      &:hover {
-        color: $color-gray-3 !important;
-      }
     }
     #navbarSupportedContent {
       background-color: $color-white;
       z-index: 10000;
+      padding: 0;
+      .menu-desktop-container {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        #menu-desktop {
+          padding-left: 0;
+          padding-right: 0;
+          display: flex;
+          .current_page_item,
+          .current-menu-ancestor {
+            background-color: $color-1;
+            a {
+              color: $color-white !important;
+            }
+          }
+          .menu-item {
+            display: flex;
+            width: auto;
+            position: relative;
+            a {
+              color: $color-gray-3;
+              font-family: $font-titles;
+              font-size: 14px;
+              padding: 8px 32px;
+              text-decoration: none;
+              &:hover {
+                background-color: $color-1;
+                color: $color-white;
+              }
+            }
+            .sub-menu {
+              display: none;
+              position: absolute;
+              min-width: 255px;
+              background-color: $color-white !important;
+              padding-top: 24px;
+              .current_page_item,
+              .current-menu-ancestor {
+                background-color: $color-1;
+                a {
+                  color: $color-white !important;
+                }
+              }
+            }
+          }
+          #menu-item-55:hover {
+            .sub-menu {
+              display: block;
+              top: 47px;
+              padding: 0;
+            }
+          }
+        }
+      }
     }
   }
   .navbar {
     padding: 0 1rem;
     .navbar-brand {
       display: inline-block;
+      display: grid;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
     }
@@ -142,7 +199,7 @@ body {
   textarea {
     height: 171px;
   }
-}
+}//
 #home-slider {
   height: 100vh;
   padding: 0;
@@ -162,8 +219,41 @@ body {
       }
     }
   }
-}//home slider
+}//fin home slider
 //
+#inicio-quien {
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-1;
+  }
+  .inicio-quien-boton-wrap {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+// home Areas
+#inicio-areas {
+  background-color: $color-gray-1;
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-black;
+  }
+  .areas-item {
+    padding: 16px;
+    .areas-image {
+      min-height: 120px;
+    }
+    .areas-title {
+      color: $color-black;
+      a {
+        color: $color-1;
+        &:hover {
+          text-decoration: none;
+          color: $color-gray-2;
+        }
+      }
+    }
+  }
+
+} //fin inicio areas
 // generales
 .ha {
   height: auto;

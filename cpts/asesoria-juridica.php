@@ -2,17 +2,17 @@
 function asesorias() {
   // etiquetas backend
   $labels = array(
-    'name'                => _x( 'Asesorias', 'Post Type General Name', 'coello-theme' ),
-    'singular_name'       => _x( 'Asesoria', 'Post Type Singular Name', 'coello-theme' ),
-    'menu_name'           => __( 'Asesoria Jurídica', 'coello-theme' ),
-    'parent_item_colon'   => __( 'Asesoria padre', 'coello-theme' ),
-    'all_items'           => __( 'Todos los Asesorias', 'coello-theme' ),
-    'view_item'           => __( 'Ver Asesoria', 'coello-theme' ),
-    'add_new_item'        => __( 'Agrega Asesoria', 'coello-theme' ),
-    'add_new'             => __( 'Nuevo Asesoria', 'coello-theme' ),
-    'edit_item'           => __( 'Edita Asesoria', 'coello-theme' ),
-    'update_item'         => __( 'Actualiza Asesoria', 'coello-theme' ),
-    'search_items'        => __( 'Busca Asesoria', 'coello-theme' ),
+    'name'                => _x( 'Asesorías', 'Post Type General Name', 'coello-theme' ),
+    'singular_name'       => _x( 'Asesoría', 'Post Type Singular Name', 'coello-theme' ),
+    'menu_name'           => __( 'Asesorías Jurídicas', 'coello-theme' ),
+    'parent_item_colon'   => __( 'Asesoría padre', 'coello-theme' ),
+    'all_items'           => __( 'Todas las Asesorías', 'coello-theme' ),
+    'view_item'           => __( 'Ver Asesoría', 'coello-theme' ),
+    'add_new_item'        => __( 'Agrega Asesoría', 'coello-theme' ),
+    'add_new'             => __( 'Nueva Asesoría', 'coello-theme' ),
+    'edit_item'           => __( 'Edita Asesoría', 'coello-theme' ),
+    'update_item'         => __( 'Actualiza Asesoría', 'coello-theme' ),
+    'search_items'        => __( 'Busca Asesoría', 'coello-theme' ),
     'not_found'           => __( 'No existe', 'coello-theme' ),
     'not_found_in_trash'  => __( 'No existe en la basura', 'coello-theme' ),
   );
@@ -20,8 +20,8 @@ function asesorias() {
   // Set other options for Custom Post Type
 
   $args = array(
-    'label'               => __( 'Asesorias', 'coello-theme' ),
-    'description'         => __( 'Asesorias Inicio Coello Trejo', 'coello-theme' ),
+    'label'               => __( 'Asesorías', 'coello-theme' ),
+    'description'         => __( 'Asesorías Jurídicas Coello Trejo', 'coello-theme' ),
     'labels'              => $labels,
     'supports'            => array( 'title', 'thumbnail'),
     'menu_icon'           => 'dashicons-welcome-learn-more',

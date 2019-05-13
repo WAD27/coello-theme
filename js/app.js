@@ -21,11 +21,12 @@ function home_slider() {
   jQuery('#home-slider').slick({
     autoPlay: true,
     arrows: false,
-    fade: true,
+    fade: false,
     mobileFirst: false,
     pauseOnFocus: false,
     pauseOnHover: false,
-    speed: 500,
+    speed: 100,
+    autoPlaySpeed: 1000
 
   });
 }

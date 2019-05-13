@@ -2,15 +2,15 @@
 
   <?php
   $args = array(
-    'post_type' => 'slider-cpt',
+    'page_id' => '8',
     'order' => 'ASC'
   );
   $q = new WP_Query($args);
-  if ($q->have_posts()):the_post();
+  if ($q->have_posts()):$q->the_post();
   /*
   En el editor de texto de la pagina, usa unicamente el shortcode de el formulario
   */
-  $form = get_the_content();
+  $form = get_field('inicio_slider_form');
   //
   ?>
   <div id="home-form" class="d-none d-md-block col-12 col-md-5">
@@ -26,8 +26,17 @@
     </div>
 
   </div>
-  <div id="home-slider" class="home-slider col-12">
-    <?php
+  <?php
+endif;
+?>
+<div id="home-slider" class="home-slider col-12">
+  <?php
+  $args = array(
+    'post_type' => 'slider-cpt',
+    'order' => 'ASC'
+  );
+  $q = new WP_Query($args);
+  if ($q->have_posts()):
     while ($q->have_posts()):
       $q->the_post();
       ?>

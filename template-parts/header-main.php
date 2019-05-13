@@ -30,16 +30,17 @@
   <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-ligh">
 
     <div class="col-8 col-sm-4 col-md-3 col-lg-2 navbar-brand">
+      <a href="<?php echo home_url(); ?>" alt="Link a Inicio Coello Trejo">
+        <div id="header-logo" class="imgLiquid imgLiquidNoFill">
 
-      <div id="header-logo" class="imgLiquid imgLiquidNoFill">
+          <?php
+          $custom_logo_id = get_theme_mod('custom_logo');
+          $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id ,'full');
+          ?>
+          <img src="<?php echo $custom_logo_url;?>" alt="Coello Trejo Abogados Logo">
 
-        <?php
-        $custom_logo_id = get_theme_mod('custom_logo');
-        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id ,'full');
-        ?>
-        <img src="<?php echo $custom_logo_url;?>" alt="Coello Trejo Abogados Logo">
-
-      </div>
+        </div>
+      </a>
 
     </div>
     <!--  -->
@@ -47,33 +48,10 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <!--  -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+    <div class="container-fluid collapse navbar-collapse" id="navbarSupportedContent">
+
+      <?php wp_nav_menu( array( 'theme_location' => 'desktop-menu')); ?>
+
     </div>
 
   </nav>
