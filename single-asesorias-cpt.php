@@ -10,10 +10,21 @@ get_template_part('template-parts/page-header');
 
   <div class="row">
 
-<?php
-echo the_content();
+    <div class="col-12 col-md-8">
 
- ?>
+      <?php
+
+      echo get_field('asesoria_texto');
+
+
+      ?>
+    </div>
+    <div class="asesorias-imagen col-12 col-md-4">
+      <div class="col-12 imgLiquid imgLiquidFill">
+        <img src="<?php echo get_field('asesoria_imagen'); ?>">
+      </div>
+    </div>
+
 
 
   </div>

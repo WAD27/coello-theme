@@ -51,7 +51,7 @@ endif;
               <div class="col-10 col-md-12 col-lg-10 ha my-auto mx-auto">
 
                 <h1 class="col-12"><?php echo the_field('slide-titulo'); ?></h1>
-                <h5 class="col-12"><?php echo the_field('slide-subtitulo'); ?></h5>
+                <h5 class="col-12 d-none d-sm-block"><?php echo the_field('slide-subtitulo'); ?></h5>
 
                 <div class="col-12 no-padding">
                   <a href="<?php echo the_field('link-boton'); ?>" class="button text-center">
