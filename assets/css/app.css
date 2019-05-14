@@ -3134,7 +3134,6 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 }
 
 #header {
-  overflow: hidden;
   height: auto;
   box-shadow: 1px 1px 2px #979797;
 }
@@ -3670,10 +3669,4 @@ footer .footer-bottom p #year {
 
 .no-padding {
   padding: 0;
-}
-
-@media screen and (max-width: 992px) {
-  #header {
-    overflow: visible;
-  }
 }

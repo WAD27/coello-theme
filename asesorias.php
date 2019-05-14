@@ -36,7 +36,7 @@ get_template_part('template-parts/page-header');
         </div>
         <div class="areas-title col-12 text-center">
           <h5><?php echo get_the_title(); ?></h5>
-          <a href="#">Ver más ></a>
+          <a href="<?php echo get_the_permalink($q->id());?>">Ver más ></a>
         </div>
       </div>
     </div>

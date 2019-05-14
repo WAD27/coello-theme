@@ -96,7 +96,7 @@ body {
 //
 // Menu
 #header {
-  overflow: hidden;
+  // overflow: hidden;
   height: auto;
   box-shadow: 1px 1px 2px $color-gray-2;
   .top-header {
@@ -605,7 +605,7 @@ footer {
 }
 // media queries
 @media screen and (max-width: 992px) {
-  #header {
-    overflow: visible;
-  }
+  // #header {
+  //   overflow: visible;
+  // }
 }

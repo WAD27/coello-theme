@@ -62,7 +62,7 @@
       <?php wp_nav_menu( array('theme_location' => 'desktop-menu')); ?>
 
     </div>
-    <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+    <div class="collapse text-center" id="navbarSupportedContent">
 
       <?php wp_nav_menu( array( 'theme_location' => 'mobile-menu')); ?>
 
