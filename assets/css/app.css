@@ -3294,6 +3294,7 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
   display: flex;
   justify-content: right;
   align-items: center;
+  padding-right: 16px;
 }
 
 #header #menu #navbarDesktop .menu-desktop-container #menu-desktop {
@@ -3468,7 +3469,7 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 }
 
 #page-header h1, #page-header h2, #page-header h3, #page-header h4, #page-header h5, #page-header h6 {
-  color: #911f2a;
+  color: #FFF;
 }
 
 #page-header .page-header {
@@ -3478,7 +3479,18 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 
 #page-header .page-header .page-header-title {
   height: 100%;
-  display: absolute;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#page-header .page-header .page-header-title h1 {
+  font-size: 60px !important;
+}
+
+#page-content h1, #page-content h2, #page-content h3, #page-content h4, #page-content h5, #page-content h6 {
+  color: #911f2a;
+  text-align: center;
 }
 
 #inicio-abogados div {

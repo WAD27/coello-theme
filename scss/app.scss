@@ -253,6 +253,7 @@ body {
         display: flex;
         justify-content: right;
         align-items: center;
+        padding-right: 16px;
         #menu-desktop {
           padding-left: 0;
           padding-right: 0;
@@ -413,7 +414,7 @@ body {
 // Page
 #page-header {
   h1,h2,h3,h4,h5,h6 {
-    color: $color-1;
+    color: $color-white;
   }
   .page-header {
     height: 332px;
@@ -422,8 +423,19 @@ body {
     }
     .page-header-title {
       height:100%;
-      display: absolute;
+      position: absolute;
+      top: 0;
+      left: 0;
+      h1 {
+        font-size: 60px !important;
+      }
     }
+  }
+}
+#page-content {
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-1;
+    text-align: center;
   }
 }
 //
