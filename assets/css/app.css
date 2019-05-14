@@ -3134,6 +3134,7 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 }
 
 #header {
+  overflow: hidden;
   height: auto;
   box-shadow: 1px 1px 2px #979797;
 }
@@ -3434,36 +3435,36 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
   margin-bottom: 32px;
 }
 
-#inicio-areas {
+#inicio-areas, #asesorias {
   background-color: #f7f7f7;
 }
 
-#inicio-areas h1, #inicio-areas h2, #inicio-areas h3, #inicio-areas h4, #inicio-areas h5, #inicio-areas h6 {
+#inicio-areas h1, #inicio-areas h2, #inicio-areas h3, #inicio-areas h4, #inicio-areas h5, #inicio-areas h6, #asesorias h1, #asesorias h2, #asesorias h3, #asesorias h4, #asesorias h5, #asesorias h6 {
   color: #000;
 }
 
-#inicio-areas .areas-item {
+#inicio-areas .areas-item, #asesorias .areas-item {
   padding: 16px;
 }
 
-#inicio-areas .areas-item .areas-image {
+#inicio-areas .areas-item .areas-image, #asesorias .areas-item .areas-image {
   min-height: 240px;
 }
 
-#inicio-areas .areas-item .areas-title {
+#inicio-areas .areas-item .areas-title, #asesorias .areas-item .areas-title {
   padding: 16px 0;
 }
 
-#inicio-areas .areas-item .areas-title {
+#inicio-areas .areas-item .areas-title, #asesorias .areas-item .areas-title {
   color: #000;
 }
 
-#inicio-areas .areas-item .areas-title a {
+#inicio-areas .areas-item .areas-title a, #asesorias .areas-item .areas-title a {
   color: #911f2a;
   font-size: 12px;
 }
 
-#inicio-areas .areas-item .areas-title a:hover {
+#inicio-areas .areas-item .areas-title a:hover, #asesorias .areas-item .areas-title a:hover {
   text-decoration: none;
   color: #979797;
 }
@@ -3665,4 +3666,10 @@ footer .footer-bottom p #year {
 
 .no-padding {
   padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  #header {
+    overflow: visible;
+  }
 }

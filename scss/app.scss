@@ -96,6 +96,7 @@ body {
 //
 // Menu
 #header {
+  overflow: hidden;
   height: auto;
   box-shadow: 1px 1px 2px $color-gray-2;
   .top-header {
@@ -124,6 +125,7 @@ body {
     width: 100%;
     background-color: $color-white;
     left: 0;
+    // overflow-x: hidden;
     //
     height:100px;
     padding: 0;
@@ -384,7 +386,7 @@ body {
   }
 }
 // home Areas
-#inicio-areas {
+#inicio-areas, #asesorias {
   background-color: $color-gray-1;
   h1,h2,h3,h4,h5,h6 {
     color: $color-black;
@@ -586,10 +588,20 @@ footer {
     }
   }
 }
+//
+// Asesorias
+
+//
 // generales
 .ha {
   height: auto;
 }
 .no-padding {
   padding: 0;
+}
+// media queries
+@media screen and (max-width: 992px) {
+  #header {
+    overflow: visible;
+  }
 }
