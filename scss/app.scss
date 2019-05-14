@@ -538,6 +538,54 @@ footer {
     }
   }
 }
+//
+// contacto
+#contact-content {
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-1;
+    margin-bottom: 16px;
+  }
+  .contact-link {
+    color: $color-gray-2;
+    text-decoration: none;
+    &:hover {
+      color: $color-1;
+    }
+  }
+  input, textarea {
+    background-color: $color-gray-1;
+    border: 1px solid $color-gray-2;
+    margin-bottom: 16px;
+  }
+  textarea {
+    height: 186px;
+  }
+  input.wpcf7-submit {
+    background-color: $color-1;
+    color: $color-white;
+    border: 0px;
+    &:hover {
+      background-color: $color-white;
+      color: $color-gray-4;
+      border: 1px solid $color-gray-4;
+    }
+  }
+  .contact-paragraph {
+    margin-bottom: 32px;
+  }
+  .contact-content {
+    .contact-form {
+      padding-right: 48px;
+      padding-left: 48px;
+      div.wpcf7-response-output {
+        margin: 0.5em 0.5em 0.5em !important;
+      }
+    }
+    .contact-block {
+      margin-bottom: 32px;
+    }
+  }
+}
 // generales
 .ha {
   height: auto;

@@ -3606,6 +3606,59 @@ footer .footer-bottom p #year {
   font-family: "Cardo", serif;
 }
 
+#contact-content h1, #contact-content h2, #contact-content h3, #contact-content h4, #contact-content h5, #contact-content h6 {
+  color: #911f2a;
+  margin-bottom: 16px;
+}
+
+#contact-content .contact-link {
+  color: #979797;
+  text-decoration: none;
+}
+
+#contact-content .contact-link:hover {
+  color: #911f2a;
+}
+
+#contact-content input, #contact-content textarea {
+  background-color: #f7f7f7;
+  border: 1px solid #979797;
+  margin-bottom: 16px;
+}
+
+#contact-content textarea {
+  height: 186px;
+}
+
+#contact-content input.wpcf7-submit {
+  background-color: #911f2a;
+  color: #FFF;
+  border: 0px;
+}
+
+#contact-content input.wpcf7-submit:hover {
+  background-color: #FFF;
+  color: #403f3f;
+  border: 1px solid #403f3f;
+}
+
+#contact-content .contact-paragraph {
+  margin-bottom: 32px;
+}
+
+#contact-content .contact-content .contact-form {
+  padding-right: 48px;
+  padding-left: 48px;
+}
+
+#contact-content .contact-content .contact-form div.wpcf7-response-output {
+  margin: 0.5em 0.5em 0.5em !important;
+}
+
+#contact-content .contact-content .contact-block {
+  margin-bottom: 32px;
+}
+
 .ha {
   height: auto;
 }
