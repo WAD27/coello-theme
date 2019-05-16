@@ -3178,6 +3178,7 @@ body .button {
   left: 0;
   height: 100px;
   padding: 0;
+  box-shadow: -2px 1px 3px #979797;
 }
 
 #header #menu .navbar-toggler {
@@ -3250,7 +3251,7 @@ body .button {
 #header #menu #navbarSupportedContent .menu-mobile-container #menu-mobile .menu-item a {
   color: #403f3f;
   font-family: "Cardo", serif;
-  font-size: 12px;
+  font-size: 16px;
   padding: 4px 16px;
   margin-bottom: 4px;
   text-decoration: none;
@@ -3559,7 +3560,7 @@ body .button {
 
 #inicio-abogados .abogados-item {
   min-height: 445px;
-  margin-bottom: 32px;
+  margin: 0 auto 32px !important;
 }
 
 #inicio-abogados .abogados-item .abogado-card {

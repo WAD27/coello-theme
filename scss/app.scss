@@ -137,6 +137,7 @@ body {
     //
     height:100px;
     padding: 0;
+    box-shadow: -2px 1px 3px $color-gray-2;
     .navbar-toggler {
       padding: 1.25rem 1.75rem;
       margin-right: 16px;
@@ -195,7 +196,7 @@ body {
             a {
               color: $color-gray-4;
               font-family: $font-titles;
-              font-size: 12px;
+              font-size: 16px;
               padding: 4px 16px;
               margin-bottom: 4px;
               text-decoration: none;
@@ -499,7 +500,7 @@ body {
   }
   .abogados-item {
     min-height: 445px;
-    margin-bottom: 32px;
+    margin: 0 auto 32px!important;
     .abogado-card {
       border: solid 1px $color-gray-2;
       h1,h2,h3,h4,h5,h6 {

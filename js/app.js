@@ -29,7 +29,7 @@ function home_slider() {
     pauseOnFocus: false,
     pauseOnHover: false,
     speed: 750,
-    autoplay: false,
+    autoplay: true,
     autolaySpeed: 1000,
     dots: true,
   });
