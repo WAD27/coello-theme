@@ -23,15 +23,15 @@ function imgLiquid() {
 
 function home_slider() {
   jQuery('#home-slider').slick({
-    autoPlay: true,
     arrows: false,
     fade: false,
-    mobileFirst: false,
+    mobileFirst: true,
     pauseOnFocus: false,
     pauseOnHover: false,
     speed: 750,
-    autoPlaySpeed: 1000
-
+    autoplay: false,
+    autolaySpeed: 1000,
+    dots: true,
   });
 }
 

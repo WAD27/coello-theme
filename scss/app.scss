@@ -54,14 +54,15 @@ body {
   }
   input, textarea, select {
     width: 100% !important;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
     color: $color-gray-2;
     background-color: $color-white;
     font-family: $font-contents;
     font-size: 14px;
     border: none;
     padding: 4px 8px;
+    border-radius: 3px;
   }
   #main {
     padding: 0;
@@ -70,16 +71,23 @@ body {
     display: inline !important;
     color: $color-white;
     background-color: $color-1;
-    padding: 8px 32px;
     text-decoration: none;
     width: auto;
     font-size: 14px;
     letter-spacing: 1px;
+    border-radius: 3px;
+    font-weight: bold;
     &:hover, .wpcf7-submit:hover{
       border: 1px solid $color-gray-4;
       color: $color-gray-4;
       background-color: $color-white;
     }
+  }
+  .wpcf7-submit{
+    padding: 12px 20px;
+  }
+  .button {
+    padding: 16px 70px;
   }
 }// body
 ::placeholder {
@@ -108,7 +116,7 @@ body {
       text-align: center;
       display: inline;
       font-family: $font-contents;
-      font-size: 11px;
+      font-size: 1rem;
       color: $color-gray-3;
       text-decoration: none;
       letter-spacing: 1.5px;
@@ -133,7 +141,7 @@ body {
       padding: 1.25rem 1.75rem;
       margin-right: 16px;
       color: $color-1;
-      border-color: $color-1;
+      border: none;
       &:hover{
         color: $color-2;
         border-color: $color-2;
@@ -162,22 +170,19 @@ body {
         #menu-mobile {
           padding-left: 0;
           padding-right: 0;
-          margin: 0 auto;
+          margin: 0 auto 0 0;
           display: inline;
           .current_page_item {
             font-weight: bolder;
             a {
               color: $color-1 !important;
-              border-left: 2px solid $color-1 !important;
             }
           }
           .current-menu-ancestor {
             a {
               color: $color-gray-4;
-              border-left: 2px solid $color-gray-4;
               &:hover {
                 color: $color-1!important;
-                border-left: 2px solid $color-1 !important;
               }
             }
           }
@@ -185,6 +190,8 @@ body {
             display: flex;
             width: auto;
             position: relative;
+            border-radius: 3px;
+            margin-right: 8px;
             a {
               color: $color-gray-4;
               font-family: $font-titles;
@@ -192,10 +199,8 @@ body {
               padding: 4px 16px;
               margin-bottom: 4px;
               text-decoration: none;
-              border-left: 2px solid $color-gray-4;
               &:hover {
                 color: $color-1;
-                border-left: 2px solid $color-1;
               }
             }
             .sub-menu {
@@ -213,7 +218,6 @@ body {
                 a {
                   color: $color-gray-4 !important;
                   font-size: 11px;
-                  border-left: 2px solid $color-gray-4;
                 }
               }
               .menu-item-object-asesorias-cpt {
@@ -221,7 +225,6 @@ body {
                   color: $color-gray-4;
                   &:hover {
                     color: $color-1 !important;
-                    border-left: 2px solid $color-1;
                   }
                 }
               }
@@ -259,7 +262,7 @@ body {
         #menu-desktop {
           padding-left: 0;
           padding-right: 0;
-          margin: 0;
+          margin: 0 0 0 auto;
           display: flex;
           .current_page_item {
             background-color: $color-1;
@@ -279,10 +282,13 @@ body {
             display: flex;
             width: auto;
             position: relative;
+            border-radius: 3px;
+            margin-right: 8px;
             a {
+              border-radius: 3px;
               color: $color-gray-3;
               font-family: $font-titles;
-              font-size: 14px;
+              font-size: 1.1rem;
               padding: 8px 32px;
               text-decoration: none;
               &:hover {
@@ -295,9 +301,9 @@ body {
               display: none;
               opacity:0;
               position: absolute;
-              min-width: 255px;
+              min-width: 290px;
               background-color: $color-white !important;
-              padding-top: 24px;
+              padding: 24px 8px 8px 8px !important;
               li {
                 a {
                   color: $color-black !important;
@@ -322,6 +328,7 @@ body {
           }
           #menu-item-55:hover {
             .sub-menu {
+              transition: 0.75s;
               display: block;
               opacity:1;
               top: 46px;
@@ -343,6 +350,11 @@ body {
     }
   }
 }
+//
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(145,31,42,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+//
 // Home Slider
 #home-form {
   position: absolute;
@@ -350,11 +362,40 @@ body {
   z-index: 1000;
   h4 {
     color: $color-white;
+    font-size: 1.5rem;
   }
   textarea {
     height: 171px;
   }
 }//
+#home-form-mobile-wrap {
+  #home-form-mobile {
+    right: 0;
+    z-index: 1000;
+    h4 {
+      color: $color-gray-4;
+      font-size: 1.5rem;
+    }
+    input,textarea {
+      background-color: $color-gray-1;
+      color: $color-gray-4;
+      border: 1px solid $color-gray-2;
+    }
+    textarea {
+      height: 150px;
+    }
+    input.wpcf7-submit {
+      background-color: $color-1;
+      color: $color-white;
+      border: 0px;
+      &:hover {
+        background-color: $color-white;
+        color: $color-gray-4;
+        border: 1px solid $color-gray-4;
+      }
+    }
+  }//
+}
 #home-slider {
   height: 100vh;
   padding: 0;
@@ -365,14 +406,22 @@ body {
       // height: auto;
       h1 {
         color: $color-white;
-        padding: 16px 0px;
+        padding: 4px 0px;
+        font-size: 3.3rem;
       }
       h5 {
         font-family: $font-contents;
         color: $color-white;
-        padding: 16px 0px;
+        padding: 4px 0px 32px;
       }
     }
+  }
+  .slick-dots {
+    -ms-transform: translateY(-50px);
+    -o-transform: translateY(-50px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    transform: translateY(-50px);
   }
 }//fin home slider
 //
@@ -403,7 +452,7 @@ body {
       color: $color-black;
       a {
         color: $color-1;
-        font-size: 12px;
+        font-size: 16px;
         &:hover {
           text-decoration: none;
           color: $color-gray-2;
@@ -605,7 +654,15 @@ footer {
 }
 // media queries
 @media screen and (max-width: 992px) {
-  // #header {
-  //   overflow: visible;
-  // }
+  #home-slider .home-slide .home-slide-text h1 {
+    font-size: 2.75rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  body .button {
+    padding: 16px 45px;
+  }
+  #home-slider .home-slide .home-slide-text h1 {
+    font-size: 1.75rem;
+  }
 }
