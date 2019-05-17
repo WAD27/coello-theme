@@ -24,7 +24,7 @@
               <div class="col-12">
 
                 <div class="areas-image col-12 no-padding imgLiquid imgLiquidFill">
-                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Coello Trajo Abogados Asesorías Jurídicas">
+                  <img src="<?php echo get_field('asesoria_imagen_inicio'); ?>" alt="Coello Trajo Abogados Asesorías Jurídicas">
                 </div>
                 <div class="areas-title col-12 text-center">
                   <h5><?php echo get_the_title(); ?></h5>

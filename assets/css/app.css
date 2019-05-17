@@ -3050,10 +3050,6 @@
   clip: auto;
 }
 
-* {
-  outline: 1px solid #911f2a;
-}
-
 body {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -3535,14 +3531,6 @@ body .button {
 #page-header .page-header {
   height: 332px;
   position: relative;
-}
-
-#page-header .page-header .page-header-img {
-  -o-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  filter: grayscale(100%);
 }
 
 #page-header .page-header .page-header-overlay {

@@ -21,7 +21,7 @@ $font-contents: 'Raleway', sans-serif;
 $font-aux: 'Lato', sans-serif;
 // wireframe
 * {
-  outline: 1px solid $color-1;
+  // outline: 1px solid $color-1;
 }
 // settings generales
 body {
@@ -473,11 +473,11 @@ body {
     height: 332px;
     position: relative;
     .page-header-img {
-      -o-filter: grayscale(100%);
-      -moz-filter: grayscale(100%);
-      -webkit-filter: grayscale(100%);
-      -ms-filter: grayscale(100%);
-      filter: grayscale(100%);
+      // -o-filter: grayscale(100%);
+      // -moz-filter: grayscale(100%);
+      // -webkit-filter: grayscale(100%);
+      // -ms-filter: grayscale(100%);
+      // filter: grayscale(100%);
     }
     .page-header-overlay {
       position: absolute;

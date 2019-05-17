@@ -2,6 +2,7 @@ jQuery(document).ready(($) => {
 
   imgLiquid()
   home_slider()
+  parallax_header()
   //
   $(window).on('scroll',()=>{
     header()
@@ -52,4 +53,12 @@ function header() {
     header.css('position','relative')
   }
 
+}
+
+function parallax_header() {
+
+//   jQuery('.page-header').parallax({
+//   speed: -.2,
+//   sliderSelector: '>.page-header-img',
+// })
 }
