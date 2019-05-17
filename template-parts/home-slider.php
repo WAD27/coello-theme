@@ -27,7 +27,7 @@
   <?php
 endif;
 ?>
-<div id="home-slider" class="home-slider col-12">
+<div id="home-slider" class="home-slider col-12 no-padding">
   <?php
   $args = array(
     'post_type' => 'slider-cpt',
@@ -38,9 +38,9 @@ endif;
     while ($q->have_posts()):
       $q->the_post();
       ?>
-      <div class="row">
+      <div class="col-12 no-padding">
 
-        <div class="home-slide col-12 imgLiquid imgLiquidFill">
+        <div class="home-slide col-12 no-padding imgLiquid imgLiquidFill">
           <img src="<?php echo the_post_thumbnail_url(); ?>" alt="Coello Trejo Home Page">
           <!--  -->
           <div class="home-slide-text col-12 col-md-7">

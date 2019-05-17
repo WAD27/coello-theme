@@ -5,6 +5,7 @@
       <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Pagina Coello Trejo">
     </div>
     <div class="page-header-title col-12">
+      <div class="page-header-overlay row"></div>
       <div class="row">
         <div class="col-12 ha my-auto text-left">
           <div class="container">

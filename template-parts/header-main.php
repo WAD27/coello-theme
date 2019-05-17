@@ -8,18 +8,18 @@
     <div class="col-12 col-lg-7 col-xl-6">
       <div class="row">
         <div class="col-12 col-sm-6 my-auto text-center">
-          <a href="mailto:administracion@coellotrejo.com">
+          <!-- <a href="mailto:administracion@coellotrejo.com">
             <i class="fa fa-envelope">&nbsp;administracion@coellotrejo.com</i>
-          </a>
+          </a> -->
         </div>
-        <div class="col-12 col-sm-6 my-auto text-center">
+        <div class="col-12 col-sm-6 my-auto text-right">
+          <!-- <a class="col-6" href="tel:55545656">
+            <i class="fa fa-phone"></i>
+            &nbsp;5563 3414
+          </a> -->
           <a class="col-6" href="tel:55545656">
             <i class="fa fa-phone"></i>
             &nbsp;5554 5656
-          </a>
-          <a class="col-6" href="tel:55545656">
-            <i class="fa fa-phone"></i>
-            &nbsp;5563 3414
           </a>
         </div>
       </div>
