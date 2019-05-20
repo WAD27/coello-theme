@@ -3093,7 +3093,7 @@ body input, body textarea, body select {
   background-color: #FFF;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  border: none;
+  border: 1px solid #979797;
   padding: 4px 8px;
   border-radius: 3px;
 }
@@ -3129,18 +3129,18 @@ body .button {
 }
 
 ::placeholder {
-  color: #f7f7f7 !important;
+  color: #979797 !important;
   opacity: 1;
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #f7f7f7 !important;
+  color: #979797 !important;
 }
 
 ::-o-input-placeholder {
   /* Microsoft Edge */
-  color: #f7f7f7 !important;
+  color: #979797 !important;
 }
 
 #header {
@@ -3504,6 +3504,7 @@ body .button {
 
 #inicio-areas .areas-item .areas-image, #asesorias .areas-item .areas-image {
   min-height: 240px;
+  border-radius: 3px;
 }
 
 #inicio-areas .areas-item .areas-title, #asesorias .areas-item .areas-title {
@@ -3535,10 +3536,10 @@ body .button {
 
 #page-header .page-header .page-header-overlay {
   position: absolute;
-  background-image: linear-gradient(to top, #403f3f, transparent);
+  background-image: linear-gradient(to right, #403f3f, transparent);
   bottom: 0;
-  height: 50%;
-  width: 100%;
+  height: 100%;
+  width: 50%;
 }
 
 #page-header .page-header .page-header-title {
@@ -3725,6 +3726,11 @@ footer .footer-bottom p #year {
 
 #single-asesorias .asesorias-imagen {
   height: 85vh;
+}
+
+div.wpcf7-response-output {
+  margin: 0em 0.5em 1em;
+  font-size: 0.75em;
 }
 
 .ha {

@@ -2,7 +2,8 @@ jQuery(document).ready(($) => {
 
   imgLiquid()
   home_slider()
-  parallax_header()
+  parallax_slider()
+  form_placeholders()
   //
   $(window).on('scroll',()=>{
     header()
@@ -55,10 +56,19 @@ function header() {
 
 }
 
-function parallax_header() {
+function parallax_slider() {
 
-//   jQuery('.page-header').parallax({
+//   jQuery('#home-slider').parallax({
 //   speed: -.2,
-//   sliderSelector: '>.page-header-img',
+//   sliderSelector: '>.home-slide',
 // })
+}
+
+function form_placeholders() {
+
+   document.getElementsByName("your-name")[0].placeholder = "Nombre"
+   document.getElementsByName("your-email")[0].placeholder = "Correo"
+   document.getElementsByName("your-tel")[0].placeholder = "Teléfono"
+   document.getElementsByName("your-message")[0].placeholder = "Mensaje"
+
 }

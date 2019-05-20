@@ -60,7 +60,7 @@ body {
     background-color: $color-white;
     font-family: $font-contents;
     font-size: 14px;
-    border: none;
+    border: 1px solid $color-gray-2;
     padding: 4px 8px;
     border-radius: 3px;
   }
@@ -91,15 +91,15 @@ body {
   }
 }// body
 ::placeholder {
-  color: $color-gray-1 !important;
+  color: $color-gray-2 !important;
   opacity:1;
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $color-gray-1 !important;
+  color: $color-gray-2 !important;
 }
 
 ::-o-input-placeholder { /* Microsoft Edge */
-  color: $color-gray-1 !important;
+  color: $color-gray-2 !important;
 }
 //
 // Menu
@@ -446,6 +446,7 @@ body {
     padding: 16px;
     .areas-image {
       min-height: 240px;
+      border-radius: 3px;
     }
     .areas-title {
       padding: 16px 0;
@@ -482,11 +483,11 @@ body {
     .page-header-overlay {
       position: absolute;
       // background-color: black;
-      background-image: linear-gradient(to top, #403f3f, transparent);
+      background-image: linear-gradient(to right, #403f3f, transparent);
       // opacity: 0.25;
       bottom: 0;
-      height: 50%;
-      width: 100%;
+      height: 100%;
+      width: 50%;
     }
     .page-header-title {
       height:100%;
@@ -661,6 +662,10 @@ footer {
   }
 }
 //
+div.wpcf7-response-output {
+    margin: 0em 0.5em 1em;
+    font-size: 0.75em;
+  }
 // generales
 .ha {
   height: auto;

@@ -73,6 +73,10 @@ endif;
     echo "No existen slides!";
     ?>
 
+<div class="home-triangle col-12 no-padding">
+  <img src="assets/img/triangle.svg" alt="Coello Trejo">
+</div>
+
   </div>
 
   <?php
