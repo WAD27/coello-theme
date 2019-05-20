@@ -3688,12 +3688,12 @@ footer .footer-bottom p #year {
   margin-bottom: 16px;
 }
 
-#contact-content .contact-link {
+#contact-content .contact-link, #contact-content .contact-link-email {
   color: #979797;
   text-decoration: none;
 }
 
-#contact-content .contact-link:hover {
+#contact-content .contact-link:hover, #contact-content .contact-link-email:hover {
   color: #911f2a;
 }
 
@@ -3777,6 +3777,9 @@ div.wpcf7-response-output {
   #home-slider .home-slide .home-slide-text h1 {
     font-size: 2.75rem;
   }
+  #contact-content .contact-link-email {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -3788,8 +3791,5 @@ div.wpcf7-response-output {
   }
   #page-header .page-header .page-header-title h1 {
     font-size: 34px !important;
-  }
-  #contact-content .contact-link {
-    font-size: 12px;
   }
 }

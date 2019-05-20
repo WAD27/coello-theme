@@ -619,7 +619,7 @@ footer {
     color: $color-1;
     margin-bottom: 16px;
   }
-  .contact-link {
+  .contact-link, .contact-link-email {
     color: $color-gray-2;
     text-decoration: none;
     &:hover {
@@ -713,6 +713,9 @@ div.wpcf7-response-output {
   #home-slider .home-slide .home-slide-text h1 {
     font-size: 2.75rem;
   }
+  #contact-content .contact-link-email {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 576px) {
   body .button {
@@ -724,7 +727,5 @@ div.wpcf7-response-output {
   #page-header .page-header .page-header-title h1 {
     font-size: 34px !important;
   }
-  #contact-content .contact-link {
-    font-size: 12px;
-  }
+
 }

@@ -45,7 +45,7 @@ get_template_part('template-parts/page-header');
       </div>
       <div class="contact-block col-12 no-padding">
         <h4>Correo</h4>
-        <a class="contact-link" href="mailto:<?php echo get_field('contacto_email');?>">
+        <a class="contact-link-email" href="mailto:<?php echo get_field('contacto_email');?>">
           <?php echo the_field('contacto_email'); ?>
         </a>
       </div>
