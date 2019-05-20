@@ -3112,6 +3112,7 @@ body .button, body .wpcf7-submit {
   letter-spacing: 1px;
   border-radius: 3px;
   font-weight: bold;
+  border: 0px;
 }
 
 body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, body .wpcf7-submit .wpcf7-submit:hover {
@@ -3122,6 +3123,7 @@ body .button:hover, body .button .wpcf7-submit:hover, body .wpcf7-submit:hover, 
 
 body .wpcf7-submit {
   padding: 12px 20px;
+  border: 0px !important;
 }
 
 body .button {
@@ -3791,5 +3793,8 @@ div.wpcf7-response-output {
   }
   #page-header .page-header .page-header-title h1 {
     font-size: 34px !important;
+  }
+  .home-slide-text h1 {
+    margin-bottom: 32px;
   }
 }
