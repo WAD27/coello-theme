@@ -1,5 +1,8 @@
-<section class="container-fluid no-padding">
+<section id="home" class="container-fluid no-padding">
 
+  <div class="home-triangle col-12 no-padding imgLiquid imgLiquidFill">
+    <img src="<?php echo get_template_directory_uri();?>/assets/img/triangle.png" alt="Coello Trejo">
+  </div>
   <?php
   $args = array(
     'page_id' => '8',
@@ -73,14 +76,12 @@ endif;
     echo "No existen slides!";
     ?>
 
-<div class="home-triangle col-12 no-padding">
-  <img src="assets/img/triangle.svg" alt="Coello Trejo">
-</div>
 
   </div>
 
   <?php
 endif;
 ?>
+
 
 </section>

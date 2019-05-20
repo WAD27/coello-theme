@@ -3145,7 +3145,6 @@ body .button {
 
 #header {
   height: auto;
-  box-shadow: 1px 1px 2px #979797;
 }
 
 #header .top-header {
@@ -3178,7 +3177,7 @@ body .button {
   left: 0;
   height: 100px;
   padding: 0;
-  box-shadow: -2px 1px 3px #979797;
+  box-shadow: -2px 3px 3px #979797;
 }
 
 #header #menu .navbar-toggler {
@@ -3380,7 +3379,8 @@ body .button {
   color: #FFF;
 }
 
-#header #menu #navbarDesktop .menu-desktop-container #menu-desktop #menu-item-55:hover .sub-menu {
+#header #menu #navbarDesktop .menu-desktop-container #menu-desktop #menu-item-55:hover .sub-menu,
+#header #menu #navbarDesktop .menu-desktop-container #menu-desktop #menu-item-252:hover .sub-menu {
   transition: 0.75s;
   display: block;
   opacity: 1;
@@ -3402,6 +3402,10 @@ body .button {
 
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(145,31,42,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#home {
+  position: relative;
 }
 
 #home-form {
@@ -3474,11 +3478,11 @@ body .button {
 }
 
 #home-slider .slick-dots {
-  -ms-transform: translateY(-50px);
-  -o-transform: translateY(-50px);
-  -webkit-transform: translateY(-50px);
-  -moz-transform: translateY(-50px);
-  transform: translateY(-50px);
+  -ms-transform: translateY(-70px);
+  -o-transform: translateY(-70px);
+  -webkit-transform: translateY(-70px);
+  -moz-transform: translateY(-70px);
+  transform: translateY(-70px);
 }
 
 #inicio-quien h1, #inicio-quien h2, #inicio-quien h3, #inicio-quien h4, #inicio-quien h5, #inicio-quien h6 {
@@ -3525,6 +3529,10 @@ body .button {
   color: #979797;
 }
 
+#page-header {
+  position: relative;
+}
+
 #page-header h1, #page-header h2, #page-header h3, #page-header h4, #page-header h5, #page-header h6 {
   color: #FFF;
 }
@@ -3550,7 +3558,7 @@ body .button {
 }
 
 #page-header .page-header .page-header-title h1 {
-  font-size: 60px !important;
+  font-size: 50px !important;
 }
 
 #page-content h1, #page-content h2, #page-content h3, #page-content h4, #page-content h5, #page-content h6 {
@@ -3631,6 +3639,10 @@ body .button {
 
 #inicio-abogados .abogados-item .abogado-card .inicio-abogado-content a.abogado-envelope:hover {
   color: #911f2a;
+}
+
+footer {
+  position: relative;
 }
 
 footer .footer-top {
@@ -3741,6 +3753,26 @@ div.wpcf7-response-output {
   padding: 0;
 }
 
+.home-triangle {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 40px;
+  z-index: 10000;
+  width: 100%;
+}
+
+#triangle-footer {
+  display: block;
+  margin: 0 auto;
+  top: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 40px 30px 40px;
+  border-color: transparent transparent #292828 transparent;
+}
+
 @media screen and (max-width: 992px) {
   #home-slider .home-slide .home-slide-text h1 {
     font-size: 2.75rem;
@@ -3753,5 +3785,11 @@ div.wpcf7-response-output {
   }
   #home-slider .home-slide .home-slide-text h1 {
     font-size: 1.75rem;
+  }
+  #page-header .page-header .page-header-title h1 {
+    font-size: 34px !important;
+  }
+  #contact-content .contact-link {
+    font-size: 12px;
   }
 }

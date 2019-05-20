@@ -2,7 +2,7 @@
 </main>
 
 <footer>
-
+  <div id="triangle-footer"></div>
 <div class="footer-top col-12 text-center">
 <p>Los Juárez #32, Benito Juárez,San José Insurgentes, C.P. 03900</p>
 <p>Tel. <a href="tel:55545656">5554 5656</a></p>
