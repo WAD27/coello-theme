@@ -375,6 +375,17 @@ body {
   textarea {
     height: 171px;
   }
+  .wpcf7-response-output {
+    display: block;
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    height: auto;
+    padding: 0px 16px;
+    z-index: 100000;
+    background-color: gray;
+    color: white;
+  }
 }//
 #home-form-mobile-wrap {
   #home-form-mobile {
@@ -656,11 +667,22 @@ footer {
       div.wpcf7-response-output {
         margin: 0.5em 0.5em 0.5em !important;
       }
+      .wpcf7-submit {
+        border: 1px solid $color-1;
+        &:hover {
+          color: $color-gray-4 !important;
+          background-color: $color-white !important;
+        }
+      }
     }
     .contact-block {
       margin-bottom: 32px;
     }
   }
+}
+#map {
+  margin-top: 32px;
+  height: 400px;
 }
 //
 // single
@@ -701,7 +723,7 @@ div.wpcf7-response-output {
   bottom: 0px;
   left: 0;
   height: 40px;
-  z-index: 10000;
+  z-index: 999;
   width: 100%;
 }
 #triangle-footer {

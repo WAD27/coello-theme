@@ -51,6 +51,11 @@ get_template_part('template-parts/page-header');
       </div>
     </div>
   </div>
+  <div id="map" class="container">
+    <div class="col-12 no-padding">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.9639889164523!2d-99.18860358568784!3d19.37071188691948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff888de2464f%3A0xaaae090bacbe4ad5!2sLos+Ju%C3%A1rez+32%2C+San+Jos%C3%A9+Insurgentes%2C+03900+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses!2smx!4v1559012815939!5m2!1ses!2smx" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
 
 </section>
 
