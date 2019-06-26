@@ -3773,6 +3773,40 @@ div.wpcf7-response-output {
   font-size: 0.75em;
 }
 
+#archive {
+  padding: 32px 16px;
+}
+
+#archive #archive-card a {
+  display: block;
+  text-decoration: none;
+  color: #979797;
+  border: 1px solid #f7f7f7;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 2px #f7f7f7;
+  transition: 0.35s;
+}
+
+#archive #archive-card a:hover {
+  text-decoration: none;
+  box-shadow: -0.5px 0.5px 2px #979797;
+}
+
+#archive #archive-card a #archive-card-img {
+  height: 240px;
+  margin-bottom: 16px;
+}
+
+#archive #archive-card a h1, #archive #archive-card a h2, #archive #archive-card a h3, #archive #archive-card a h4, #archive #archive-card a h5, #archive #archive-card a h6 {
+  color: #292828;
+  padding: 16px 0;
+}
+
+#archive #archive-card a p {
+  padding: 32px 0 0 0;
+}
+
 .ha {
   height: auto;
 }

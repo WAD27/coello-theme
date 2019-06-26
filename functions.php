@@ -32,17 +32,29 @@ function remove_backend_menus() {
   remove_menu_page('edit-comments.php');          //Comments
   // remove_menu_page('edit.php');                   //Posts
   // remove_menu_page('upload.php');                 //Media
-	// remove_menu_page( 'index.php' );                  //Dashboard
-	// remove_menu_page( 'jetpack' );                    //Jetpack*
-	// remove_menu_page( 'edit.php?post_type=page' );    //Pages
-	// remove_menu_page( 'themes.php' );                 //Appearance
-	// remove_menu_page( 'plugins.php' );                //Plugins
-	// remove_menu_page( 'users.php' );                  //Users
-	// remove_menu_page( 'tools.php' );                  //Tools
-	// remove_menu_page( 'options-general.php' );     //Settings
+  // remove_menu_page( 'index.php' );                  //Dashboard
+  // remove_menu_page( 'jetpack' );                    //Jetpack*
+  // remove_menu_page( 'edit.php?post_type=page' );    //Pages
+  // remove_menu_page( 'themes.php' );                 //Appearance
+  // remove_menu_page( 'plugins.php' );                //Plugins
+  // remove_menu_page( 'users.php' );                  //Users
+  // remove_menu_page( 'tools.php' );                  //Tools
+  // remove_menu_page( 'options-general.php' );     //Settings
 }
 add_action('admin_menu','remove_backend_menus');
 // CPTs
 include_once "cpts/slider-home.php";
 include_once "cpts/asesoria-juridica.php";
 include_once "cpts/abogados.php";
+//
+function get_excerpt(){
+  $excerpt = get_the_content();
+  $excerpt = preg_replace(" ([.*?])",'',$excerpt);
+  $excerpt = strip_shortcodes($excerpt);
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, 50);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+  $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
+  $excerpt = $excerpt.'... Leer Más';
+  return $excerpt;
+}

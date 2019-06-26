@@ -5,6 +5,7 @@
 // colores
 $color-black: #000;
 $color-white: #FFF;
+$color-clear: #f1f1f1;
 $color-1: #911f2a;
 $color-2: #d0bc26;
 $color-gray-1: #f7f7f7;
@@ -695,6 +696,38 @@ footer {
 div.wpcf7-response-output {
   margin: 0em 0.5em 1em;
   font-size: 0.75em;
+}
+// Archive
+#archive {
+  padding: 32px 16px;
+  #archive-card {
+    a {
+      // background-color: $color-clear;
+      display: block;
+      text-decoration: none;
+      color: $color-text-content;
+      border: 1px solid $color-gray-1;
+      padding: 16px;
+      border-radius: 4px;
+      box-shadow: 0.5px 0.5px 2px $color-gray-1;
+      transition: 0.35s;
+      &:hover {
+        text-decoration: none;
+        box-shadow: -0.5px 0.5px 2px $color-gray-2;
+      }
+      #archive-card-img {
+        height: 240px;
+        margin-bottom: 16px;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        color: $color-gray-3;
+        padding: 16px 0;
+      }
+      p {
+        padding: 32px 0 0 0;
+      }
+    }
+  }
 }
 // generales
 .ha {
