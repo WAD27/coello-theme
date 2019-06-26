@@ -1,5 +1,15 @@
 <?php
 add_filter( 'show_admin_bar', '__return_false' );
+register_sidebar(
+array(
+    'name' => __( 'coello-blog-sidebar', 'coello-trejo' ),,
+    'id' => 'sidebar-coello',
+    'description' => __( 'Sidebar para Coello Trejo' ),
+    'before_widget' => '<li>',
+    'after_widget' => '</li>',
+    'before_title' => '<h3>',
+    'after_title' => '</h3>',
+  ));
 //
 add_theme_support( 'custom-logo', array('header-text' => array('Coello Trejo', 'Abogados')) );
 add_theme_support( 'menus' );

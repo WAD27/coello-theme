@@ -729,6 +729,11 @@ div.wpcf7-response-output {
     }
   }
 }
+// Sidebar
+#blog-sidebar {
+  max-height: 95vh;
+  outline: 1px solid $color-clear;
+}
 // generales
 .ha {
   height: auto;
