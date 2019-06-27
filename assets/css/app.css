@@ -3426,7 +3426,7 @@ body .button {
 }
 
 #home-form .wpcf7-response-output {
-  display: block;
+  display: none;
   position: fixed;
   bottom: 8px;
   right: 8px;
@@ -3818,7 +3818,6 @@ div.wpcf7-response-output {
 
 #sidebar-search {
   padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .latest-post {
@@ -3844,8 +3843,16 @@ div.wpcf7-response-output {
 }
 
 .latest-post .latest-post-link .latest-post-img {
-  height: 80px;
+  height: 90px;
   margin-bottom: 16px;
+}
+
+.latest-post .latest-post-link .latest-post-txt h1, .latest-post .latest-post-link .latest-post-txt h2, .latest-post .latest-post-link .latest-post-txt h3, .latest-post .latest-post-link .latest-post-txt h4, .latest-post .latest-post-link .latest-post-txt h5, .latest-post .latest-post-link .latest-post-txt h6 {
+  color: #292828;
+}
+
+.latest-post .latest-post-link .latest-post-txt p {
+  margin: 0;
 }
 
 .ha {

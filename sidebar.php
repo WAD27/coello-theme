@@ -1,41 +1,48 @@
 <aside id="blog-sidebar" class="col-12">
 
-  <div id="sidebar-search" class="col-12">
+  <div id="sidebar-search" class="col-12 no-padding">
     <?php echo get_search_form(); ?>
   </div>
 
   <hr>
 
-  <h4 class="col-12 text-center">
-    Últimas
+  <h4 class="col-12 text-center no-padding">
+    Prensa Últimas
   </h4>
 
-  <?php
-  $args = array('cat' => 4, 'post_count' => 4);
-  $post = new WP_Query($args);
-  while ($post->have_posts()):$post->the_post();
-  ?>
+  <div class="row">
 
-  <article class="latest-post col-12">
+    <?php
+    $args = array(
+      'category_name' => 'sala-de-prensa',
+      'posts_per_page' => 4
+    );
+    $post = new WP_Query($args);
+    while ($post->have_posts()):$post->the_post();
+    ?>
 
-    <a class="latest-post-link col-12" href="<?php echo get_the_permalink(); ?>">
+    <article class="latest-post col-12">
 
-      <div class="latest-post-img col-12 imgLiquid imgLiquidFill">
-        <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Coello Trejo Blog">
-      </div>
+      <a class="latest-post-link col-12 no-padding" href="<?php echo get_the_permalink(); ?>">
 
-      <div class="latest-post-txt col-12">
+        <div class="latest-post-img col-12 imgLiquid imgLiquidFill">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Coello Trejo Blog">
+        </div>
 
-        <h6 class="col-12 no-padding"><?php echo the_title(); ?></h6>
-        <p class="col-12 text-center"><small><?php echo get_the_date(); ?></small></p>
-        <p class="col-12 no-padding text-right"><small>... Leer Más</small></p>
+        <div class="latest-post-txt col-12 no-padding">
 
-      </div>
+          <h6 class="col-12 no-padding"><?php echo the_title(); ?></h6>
+          <p class="col-12 text-center no-padding"><small><?php echo get_the_date(); ?></small></p>
+          <p class="col-12 no-padding text-right"><small>... Leer Más</small></p>
 
-    </a>
+        </div>
 
-  </article>
+      </a>
+
+    </article>
 
 
-<?php endwhile; ?>
+  <?php endwhile; ?>
+</div>
+
 </aside>

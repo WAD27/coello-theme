@@ -377,7 +377,7 @@ body {
     height: 171px;
   }
   .wpcf7-response-output {
-    display: block;
+    display: none;
     position: fixed;
     bottom: 8px;
     right: 8px;
@@ -737,7 +737,7 @@ div.wpcf7-response-output {
 }
 #sidebar-search {
   padding-top: 16px;
-  padding-bottom: 16px;
+  // padding-bottom: 16px;
 }
 .latest-post {
   margin-bottom: 32px;
@@ -757,8 +757,16 @@ div.wpcf7-response-output {
         box-shadow: -0.5px 0.5px 2px $color-gray-2;
       }
     .latest-post-img {
-      height: 80px;
+      height: 90px;
       margin-bottom: 16px;
+    }
+    .latest-post-txt {
+      h1,h2,h3,h4,h5,h6 {
+        color: $color-gray-3;
+      }
+      p {
+        margin: 0;
+      }
     }
   }
 }
