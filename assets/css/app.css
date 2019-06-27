@@ -3099,7 +3099,7 @@ body input, body textarea, body select {
 }
 
 body #main {
-  padding: 0;
+  padding: 0 0 32px 0;
 }
 
 body .button, body .wpcf7-submit {
@@ -3811,9 +3811,63 @@ div.wpcf7-response-output {
   padding: 32px 0 0 0;
 }
 
+#inicio-prensa {
+  padding: 32px 16px;
+  background-color: #292828;
+}
+
+#inicio-prensa h1, #inicio-prensa h2, #inicio-prensa h3, #inicio-prensa h4, #inicio-prensa h5, #inicio-prensa h6 {
+  color: #f7f7f7;
+  margin-bottom: 8px;
+}
+
+#inicio-prensa #inicio-prensa-link a {
+  padding: 32px 0;
+  text-decoration: none;
+}
+
+#inicio-prensa #inicio-prensa-link a:hover {
+  color: #979797;
+}
+
+#inicio-prensa #prensa-card {
+  margin-bottom: 32px;
+}
+
+#inicio-prensa #prensa-card a {
+  background-color: #f1f1f1;
+  display: block;
+  text-decoration: none;
+  color: #979797;
+  border: 1px solid #f7f7f7;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 2px #979797;
+  transition: 0.35s;
+}
+
+#inicio-prensa #prensa-card a:hover {
+  text-decoration: none;
+  box-shadow: -0.5px 0.5px 3px #f7f7f7;
+}
+
+#inicio-prensa #prensa-card a #prensa-card-img {
+  height: 180px;
+  margin-bottom: 8px;
+}
+
+#inicio-prensa #prensa-card a h1, #inicio-prensa #prensa-card a h2, #inicio-prensa #prensa-card a h3, #inicio-prensa #prensa-card a h4, #inicio-prensa #prensa-card a h5, #inicio-prensa #prensa-card a h6 {
+  color: #292828;
+  padding: 16px 0;
+}
+
+#inicio-prensa #prensa-card a p {
+  padding: 16px 0 0 0;
+}
+
 #blog-sidebar {
-  max-height: 95vh;
   outline: 1px solid #f1f1f1;
+  padding-bottom: 16px;
 }
 
 #sidebar-search {
@@ -3881,6 +3935,15 @@ div.wpcf7-response-output {
 
 .no-padding {
   padding: 0;
+}
+
+.paginacion a {
+  color: #292828;
+}
+
+.paginacion a:hover {
+  text-decoration: none;
+  color: #979797;
 }
 
 .home-triangle {

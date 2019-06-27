@@ -40,6 +40,12 @@ get_header();
 
     <?php endwhile; ?>
   </div>
+  <!-- paginacion -->
+  <div class="paginacion row">
+    <div class="nav-previous col-6 text-left"><?php previous_posts_link( 'Anterior' ); ?></div>
+    <div class="nav-next col-6 text-right"><?php next_posts_link( 'Siguiente' ); ?></div>
+  </div>
+  <!--  -->
   <?php
 endif;
 ?>

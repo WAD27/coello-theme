@@ -11,7 +11,7 @@
     Prensa Últimas
   </h4>
 
-  <div class="row">
+  <!-- <div class="row"> -->
 
     <?php
     $args = array(
@@ -19,35 +19,36 @@
       'cat' => 4,
       'posts_per_page' => 4
     );
-    $post = new WP_Query($args);
-    while ($post->have_posts()):$post->the_post();
-    ?>
+    $q = new WP_Query($args);
+    if ($q->have_posts())://$q->the_post();
+      while ($q->have_posts()):$q->the_post();
+      ?>
 
-    <article class="latest-post col-12">
+      <article class="latest-post col-12">
 
-      <a class="latest-post-link col-12 no-padding" href="<?php echo get_the_permalink(); ?>">
+        <a class="latest-post-link col-12 no-padding" href="<?php echo get_the_permalink(); ?>">
 
-        <div class="latest-post-img col-12 imgLiquid imgLiquidFill">
-          <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Coello Trejo Blog">
-        </div>
+          <div class="latest-post-img col-12 imgLiquid imgLiquidFill">
+            <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Coello Trejo Blog">
+          </div>
 
-        <div class="latest-post-txt col-12 no-padding">
+          <div class="latest-post-txt col-12 no-padding">
 
-          <h6 class="col-12 no-padding"><?php echo the_title(); ?></h6>
-          <p class="col-12 text-center no-padding"><small><?php echo get_the_date(); ?></small></p>
-          <p class="col-12 no-padding text-right"><small>... Leer Más</small></p>
+            <h6 class="col-12 no-padding"><?php echo the_title(); ?></h6>
+            <p class="col-12 text-center no-padding"><small><?php echo get_the_date(); ?></small></p>
+            <p class="col-12 no-padding text-right"><small>... Leer Más</small></p>
 
-        </div>
+          </div>
 
-      </a>
+        </a>
 
-    </article>
+      </article>
 
-    <?php
+      <?php
   endwhile;
-  wp_reset_query();
+endif;
   ?>
 
-</div>
+<!-- </div> -->
 
 </aside>

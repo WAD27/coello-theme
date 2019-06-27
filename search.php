@@ -2,7 +2,7 @@
 
 get_header();
 
-get_template_part('template-parts/page-header');
+// get_template_part('template-parts/page-header');
 
 ?>
 
@@ -10,7 +10,10 @@ get_template_part('template-parts/page-header');
 
   <div class="row">
 
+
     <div class="serach-content-area col-12 col-md-8 col-lg-9">
+      <h1 class="col-12 text-center">Resultados de Busqueda</h1>
+      <hr>
 
       <?php
       $s=get_search_query();
@@ -21,7 +24,6 @@ get_template_part('template-parts/page-header');
       $q = new WP_Query($args);
       if ($q->have_posts()):
         ?>
-        <hr>
         <ul class="search-list col-12">
           <?php
           while ($q->have_posts()):
@@ -42,6 +44,12 @@ get_template_part('template-parts/page-header');
           endwhile;
           ?>
         </ul>
+        <!-- paginacion -->
+        <div class="paginacion row">
+          <div class="nav-previous col-6 text-left"><?php previous_posts_link( 'Anterior' ); ?></div>
+          <div class="nav-next col-6 text-right"><?php next_posts_link( 'Siguiente' ); ?></div>
+        </div>
+        <!--  -->
         <?php
       else:
         ?>

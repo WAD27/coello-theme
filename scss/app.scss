@@ -66,7 +66,7 @@ body {
     border-radius: 3px;
   }
   #main {
-    padding: 0;
+    padding: 0 0 32px 0;
   }
   .button, .wpcf7-submit{
     display: inline !important;
@@ -730,10 +730,58 @@ div.wpcf7-response-output {
     }
   }
 }
+// home prensa
+#inicio-prensa {
+  padding: 32px 16px;
+  background-color: $color-gray-3;
+  h1,h2,h3,h4,h5,h6 {
+    color: $color-gray-1;
+    margin-bottom: 8px;
+  }
+  #inicio-prensa-link {
+    a {
+      padding: 32px 0;
+      text-decoration: none;
+      &:hover {
+        color: $color-gray-2;
+      }
+    }
+  }
+  #prensa-card {
+    margin-bottom: 32px;
+    a {
+      background-color: $color-clear;
+      display: block;
+      text-decoration: none;
+      color: $color-text-content;
+      border: 1px solid $color-gray-1;
+      padding: 16px;
+      border-radius: 4px;
+      box-shadow: 0.5px 0.5px 2px $color-gray-2;
+      transition: 0.35s;
+      &:hover {
+        text-decoration: none;
+        box-shadow: -0.5px 0.5px 3px $color-gray-1;
+      }
+      #prensa-card-img {
+        height: 180px;
+        margin-bottom: 8px;
+      }
+      h1,h2,h3,h4,h5,h6 {
+        color: $color-gray-3;
+        padding: 16px 0;
+      }
+      p {
+        padding: 16px 0 0 0;
+      }
+    }
+  }
+}
 // Sidebar
 #blog-sidebar {
-  max-height: 95vh;
+  // max-height: 95vh;
   outline: 1px solid $color-clear;
+  padding-bottom: 16px;
 }
 #sidebar-search {
   padding-top: 16px;
@@ -794,6 +842,16 @@ div.wpcf7-response-output {
 }
 .no-padding {
   padding: 0;
+}
+// paginacion
+.paginacion {
+  a {
+    color: $color-gray-3;
+    &:hover {
+      text-decoration: none;
+      color: $color-gray-2;
+    }
+  }
 }
 // triangles
 @mixin triangle_up($color) {

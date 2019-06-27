@@ -57,6 +57,7 @@ add_filter( 'show_admin_bar', '__return_false' );
   include_once "cpts/asesoria-juridica.php";
   include_once "cpts/abogados.php";
   //
+// extracto
   function get_excerpt(){
     $excerpt = get_the_content();
     $excerpt = preg_replace(" ([.*?])",'',$excerpt);
