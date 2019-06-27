@@ -3777,6 +3777,10 @@ div.wpcf7-response-output {
   padding: 32px 16px;
 }
 
+#archive #archive-card {
+  margin-bottom: 32px;
+}
+
 #archive #archive-card a {
   display: block;
   text-decoration: none;
@@ -3810,6 +3814,37 @@ div.wpcf7-response-output {
 #blog-sidebar {
   max-height: 95vh;
   outline: 1px solid #f1f1f1;
+}
+
+#sidebar-search {
+  margin-bottom: 32px;
+}
+
+.latest-post {
+  margin-bottom: 16px;
+}
+
+.latest-post .latest-post-link {
+  position: relative;
+  background-color: #f1f1f1;
+  display: block;
+  text-decoration: none;
+  color: #979797;
+  border: 1px solid #f7f7f7;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 2px #f7f7f7;
+  transition: 0.35s;
+}
+
+.latest-post .latest-post-link:hover {
+  text-decoration: none;
+  box-shadow: -0.5px 0.5px 2px #979797;
+}
+
+.latest-post .latest-post-link .latest-post-img {
+  height: 80px;
+  margin-bottom: 16px;
 }
 
 .ha {

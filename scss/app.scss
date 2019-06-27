@@ -701,6 +701,7 @@ div.wpcf7-response-output {
 #archive {
   padding: 32px 16px;
   #archive-card {
+    margin-bottom: 32px;
     a {
       // background-color: $color-clear;
       display: block;
@@ -733,6 +734,32 @@ div.wpcf7-response-output {
 #blog-sidebar {
   max-height: 95vh;
   outline: 1px solid $color-clear;
+}
+#sidebar-search {
+  margin-bottom: 32px;
+}
+.latest-post {
+  margin-bottom: 16px;
+  .latest-post-link {
+    position: relative;
+      background-color: $color-clear;
+      display: block;
+      text-decoration: none;
+      color: $color-text-content;
+      border: 1px solid $color-gray-1;
+      padding: 16px;
+      border-radius: 4px;
+      box-shadow: 0.5px 0.5px 2px $color-gray-1;
+      transition: 0.35s;
+      &:hover {
+        text-decoration: none;
+        box-shadow: -0.5px 0.5px 2px $color-gray-2;
+      }
+    .latest-post-img {
+      height: 80px;
+      margin-bottom: 16px;
+    }
+  }
 }
 // generales
 .ha {
