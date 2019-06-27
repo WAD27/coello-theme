@@ -743,19 +743,19 @@ div.wpcf7-response-output {
   margin-bottom: 32px;
   .latest-post-link {
     position: relative;
-      background-color: $color-clear;
-      display: block;
+    background-color: $color-clear;
+    display: block;
+    text-decoration: none;
+    color: $color-text-content;
+    border: 1px solid $color-gray-1;
+    padding: 16px;
+    border-radius: 4px;
+    box-shadow: 0.5px 0.5px 2px $color-gray-1;
+    transition: 0.35s;
+    &:hover {
       text-decoration: none;
-      color: $color-text-content;
-      border: 1px solid $color-gray-1;
-      padding: 16px;
-      border-radius: 4px;
-      box-shadow: 0.5px 0.5px 2px $color-gray-1;
-      transition: 0.35s;
-      &:hover {
-        text-decoration: none;
-        box-shadow: -0.5px 0.5px 2px $color-gray-2;
-      }
+      box-shadow: -0.5px 0.5px 2px $color-gray-2;
+    }
     .latest-post-img {
       height: 90px;
       margin-bottom: 16px;
@@ -769,6 +769,24 @@ div.wpcf7-response-output {
       }
     }
   }
+}
+// Search
+.search-list {
+  list-style-type: none;
+  li {
+    a {
+      color: $color-text-content;
+      &:hover {
+        text-decoration: none;
+        div {
+          color: $color-gray-3;
+        }
+      }
+    }
+  }
+}
+.search-post-img {
+  height: 90px;
 }
 // generales
 .ha {

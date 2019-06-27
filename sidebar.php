@@ -1,5 +1,6 @@
 <aside id="blog-sidebar" class="col-12">
 
+
   <div id="sidebar-search" class="col-12 no-padding">
     <?php echo get_search_form(); ?>
   </div>
@@ -14,7 +15,8 @@
 
     <?php
     $args = array(
-      'category_name' => 'sala-de-prensa',
+      // 'category_name' => 'sala-de-prensa',
+      'cat' => 4,
       'posts_per_page' => 4
     );
     $post = new WP_Query($args);
@@ -41,8 +43,11 @@
 
     </article>
 
+    <?php
+  endwhile;
+  wp_reset_query();
+  ?>
 
-  <?php endwhile; ?>
 </div>
 
 </aside>

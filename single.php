@@ -18,16 +18,20 @@ get_template_part('template-parts/page-header');
       </div>
     </article>
     <!--  -->
-    <div class="col-xs-12 col-md-4 col-lg-3">
-      <?php
-      echo get_sidebar();
-      ?>
-    </div>
-  <?php endif; ?>
+    <?php
+  endif;
+  wp_reset_query();
+  ?>
+
+  <div class="col-xs-12 col-md-4 col-lg-3">
+    <?php
+    echo get_sidebar();
+    ?>
+  </div>
+
 </div>
 
 </section>
-
 
 <?php
 get_footer();

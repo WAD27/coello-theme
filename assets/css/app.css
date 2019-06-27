@@ -3855,6 +3855,26 @@ div.wpcf7-response-output {
   margin: 0;
 }
 
+.search-list {
+  list-style-type: none;
+}
+
+.search-list li a {
+  color: #979797;
+}
+
+.search-list li a:hover {
+  text-decoration: none;
+}
+
+.search-list li a:hover div {
+  color: #292828;
+}
+
+.search-post-img {
+  height: 90px;
+}
+
 .ha {
   height: auto;
 }
