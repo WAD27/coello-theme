@@ -3067,7 +3067,7 @@ body p, body div, body span, body article, body section {
   color: #979797;
 }
 
-body h1, body h2, body h3, body h4, body h5, body h6 {
+body h1, body h2, body h3, body h4, body h5, body h6, body label {
   font-family: "Cardo", serif;
 }
 
@@ -3817,11 +3817,12 @@ div.wpcf7-response-output {
 }
 
 #sidebar-search {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .latest-post {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .latest-post .latest-post-link {

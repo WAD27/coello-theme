@@ -38,7 +38,7 @@ body {
     letter-spacing: 2.8px;
     color: $color-text-content
   }
-  h1,h2,h3,h4,h5,h6 {
+  h1,h2,h3,h4,h5,h6, label {
     font-family: $font-titles;
   }
   section {
@@ -736,10 +736,11 @@ div.wpcf7-response-output {
   outline: 1px solid $color-clear;
 }
 #sidebar-search {
-  margin-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .latest-post {
-  margin-bottom: 16px;
+  margin-bottom: 32px;
   .latest-post-link {
     position: relative;
       background-color: $color-clear;
