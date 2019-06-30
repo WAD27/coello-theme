@@ -3146,6 +3146,8 @@ body .button {
 }
 
 #header {
+  transition: position 1s;
+  -webkit-transition: position 1s;
   height: auto;
 }
 
@@ -3172,6 +3174,7 @@ body .button {
 
 #header #menu {
   transition: 1s;
+  -webkit-transition: 1s;
   top: 0;
   z-index: 100000;
   width: 100%;
@@ -3785,16 +3788,16 @@ div.wpcf7-response-output {
   display: block;
   text-decoration: none;
   color: #979797;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #979797;
   padding: 16px;
   border-radius: 4px;
-  box-shadow: 0.5px 0.5px 2px #f7f7f7;
+  box-shadow: 1px 1px 2px #979797;
   transition: 0.35s;
 }
 
 #archive #archive-card a:hover {
   text-decoration: none;
-  box-shadow: -0.5px 0.5px 2px #979797;
+  box-shadow: -1px 1px 3px #979797;
 }
 
 #archive #archive-card a #archive-card-img {

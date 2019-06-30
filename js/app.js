@@ -42,7 +42,7 @@ function header() {
   var header = jQuery('nav#menu')
   var maincontent = jQuery('#main')
 
-  if(top >= 32) {
+  if(top >= 1) {
 
     maincontent.css('padding-top','100px')
     header.css('position','fixed')

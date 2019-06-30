@@ -107,6 +107,8 @@ body {
 //
 // Menu
 #header {
+  transition: position 1s;
+  -webkit-transition: position 1s;
   // overflow: hidden;
   height: auto;
   // box-shadow: 1px 1px 2px $color-gray-2;
@@ -130,6 +132,7 @@ body {
   }
   #menu {
     transition: 1s;
+    -webkit-transition: 1s;
     // estilos para fixed aplicado por js
     top: 0;
     z-index: 100000;
@@ -707,14 +710,14 @@ div.wpcf7-response-output {
       display: block;
       text-decoration: none;
       color: $color-text-content;
-      border: 1px solid $color-gray-1;
+      border: 1px solid $color-gray-2;
       padding: 16px;
       border-radius: 4px;
-      box-shadow: 0.5px 0.5px 2px $color-gray-1;
+      box-shadow: 1px 1px 2px $color-gray-2;
       transition: 0.35s;
       &:hover {
         text-decoration: none;
-        box-shadow: -0.5px 0.5px 2px $color-gray-2;
+        box-shadow: -1px 1px 3px $color-gray-2;
       }
       #archive-card-img {
         height: 240px;
