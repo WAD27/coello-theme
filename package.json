@@ -29,7 +29,7 @@
   "dependencies": {
     "@babel/core": "^7.4.4",
     "autoprefixer": "^9.5.1",
-    "babel-loader": "^8.0.5",
+    "babel-loader": "^8.3.0",
     "browser-sync": "^2.26.5",
     "browsersync": "0.0.1-security",
     "child_process": "^1.0.2",
@@ -45,7 +45,7 @@
     "gulp-sass": "^4.0.2",
     "postcss": "^7.0.16",
     "slick-slider": "^1.8.2",
-    "webpack": "^4.30.0",
-    "webpack-stream": "^5.2.1"
+    "webpack": "^5.75.0",
+    "webpack-stream": "^7.0.0"
   }
 }
